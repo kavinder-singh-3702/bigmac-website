@@ -3,6 +3,10 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+
+import { BackgroundLines } from "@/components/Background/UI/background-lines";
+import EarthScene from "@/components/Earth";
+
 export default function Layout({ children }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -28,7 +32,7 @@ export default function Layout({ children }) {
               alt="Logo"
               width={50}
               height={50}
-              priority={true} 
+              priority={true}
             />
           </Link>
           <ul className="flex items-center gap-8 pr-12">
@@ -51,7 +55,7 @@ export default function Layout({ children }) {
                   <li className="py-1">
                     <Link
                       href="/services/website-development"
-                      target="_blank"  
+                      target="_blank"
                       className="hover:text-blue-300"
                     >
                       Website Development
@@ -60,7 +64,7 @@ export default function Layout({ children }) {
                   <li className="py-1">
                     <Link
                       href="/services/epc-project"
-                      target="_blank" 
+                      target="_blank"
                       className="hover:text-blue-300"
                     >
                       EPC Project Work
@@ -69,7 +73,7 @@ export default function Layout({ children }) {
                   <li className="py-1">
                     <Link
                       href="/services/hr-services"
-                      target="_blank"  
+                      target="_blank"
                       className="hover:text-blue-300"
                     >
                       HR Services
@@ -92,7 +96,22 @@ export default function Layout({ children }) {
           </ul>
         </nav>
       </header>
-      <main className="mt-16">{children}</main>
+      <main className="mt-16">
+        {children}
+        <section className="max-h-[100vh] bg-black flex justify-center items-center relative">
+          <BackgroundLines />
+          <div className="title absolute top-[28%] left-[4.5%] flex flex-col justify-center items-center text-center">
+            <p className="text-white font-bold text-[8vh] leading-tight text-shadow-md">
+              BIGMAC AGENCY
+            </p>
+            <span className="block w-[45vw] text-gray-400 break-words pl-2 text-center text-2xl">
+              Get the best advices from our experts, including expert
+              developers, designers, enthusiasts and managers.
+            </span>
+          </div>
+          <EarthScene />
+        </section>
+      </main>
     </div>
   );
 }
