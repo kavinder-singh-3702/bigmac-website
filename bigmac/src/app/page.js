@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-
 export default function Layout({ children }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
