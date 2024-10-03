@@ -43,8 +43,8 @@ export default function HRServices() {
             Our Work
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-16">
-            Take a look at some of the cutting-edge solutions we've created for
-            businesses around the globe.
+            Take a look at some of the cutting-edge solutions we&apos;ve created
+            for businesses around the globe.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-10 bg-gradient-to-b from-gray-900 to-black rounded-2xl shadow-xl border border-gray-700 hover:border-green-200 transition-all transform hover:scale-105 hover:shadow-2xl">
