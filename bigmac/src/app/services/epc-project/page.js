@@ -1,50 +1,6 @@
 export default function EPCProject() {
   return (
     <>
-      <header className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-8 shadow-xl">
-        <div className="container mx-auto flex justify-between items-center px-8">
-          <div className="text-4xl font-extrabold tracking-wider text-white">
-            MyLogo
-          </div>
-          <nav>
-            <ul className="flex space-x-8 text-lg font-semibold tracking-wide">
-              <li>
-                <a
-                  href="/"
-                  className="hover:text-green-200 hover:underline transition duration-300"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-green-200 hover:underline transition duration-300"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-green-200 hover:underline transition duration-300"
-                >
-                  Our Work
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-green-200 hover:underline transition duration-300"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
       <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-black via-gray-900 to-black text-white px-8">
         <h1 className="text-5xl font-extrabold mb-6 text-transparent bg-clip-text bg-white tracking-wide leading-tight">
           EPC Project Work - Services
