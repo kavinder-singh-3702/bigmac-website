@@ -10,6 +10,8 @@ const EarthScene = () => {
   const mountRef = useRef(null);
 
   useEffect(() => {
+    const currentMount = mountRef.current; // Capture mountRef value
+
     const w = window.innerWidth * 0.5; // Adjust to match the div width
     const h = window.innerHeight * 0.8;
 
@@ -20,7 +22,7 @@ const EarthScene = () => {
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(w, h);
-    mountRef.current.appendChild(renderer.domElement);
+    currentMount.appendChild(renderer.domElement); // Use captured value
 
     // Tone mapping for better colors
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -115,7 +117,9 @@ const EarthScene = () => {
     // Cleanup on component unmount
     return () => {
       window.removeEventListener("resize", handleWindowResize);
-      mountRef.current.removeChild(renderer.domElement);
+      if (currentMount) {
+        currentMount.removeChild(renderer.domElement); // Use captured value
+      }
       renderer.dispose();
     };
   }, []);
