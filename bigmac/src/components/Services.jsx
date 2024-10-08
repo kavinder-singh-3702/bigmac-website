@@ -29,7 +29,7 @@ export const serviceData = [
   },
   {
     id: "HR-Services",
-    title: "Manpower Services",
+    title: "HR-Services",
     shortDesc:
       "Comprehensive digital marketing services.Amplify your online presence with our dynamic digital marketing services.",
     details:
