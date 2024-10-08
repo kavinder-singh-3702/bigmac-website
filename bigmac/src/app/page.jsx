@@ -1,7 +1,7 @@
 import { BackgroundLines } from "@/components/Background/UI/background-lines";
-import { BackgroundBeamsWithCollision } from "@/components/Background/UI/beams.jsx";
+import { BackgroundBeamsWithCollision } from "../components/Background/UI/Beams";
 import EarthScene from "@/components/Earth";
-import Services from "@/components/services.jsx";
+import Services from "../components/Services";
 import { Timeline } from "@/components/Timeline/Timeline";
 import Statistics from "@/components/Statistics/Statistics";
 import { FeaturesSectionDemo } from "@/components/Background/UI/Cards";
