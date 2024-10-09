@@ -124,6 +124,8 @@ export default function WebsiteDevelopment() {
           </div>
         </div>
       </section>
+      {/* contact page */}
+      {/* <WebsiteContactUs /> */}
 
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-12">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-8">
@@ -150,7 +152,7 @@ export default function WebsiteDevelopment() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/WebsiteContactUs/Home"
                   className="hover:text-green-200 transition duration-300"
                 >
                   Contact Us
