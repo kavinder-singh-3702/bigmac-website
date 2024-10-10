@@ -10,6 +10,7 @@ import { useForm } from "@/hooks/use-form";
 import { Switch } from "./Switch";
 
 import plans from "@/data/plans.json";
+import Link from "next/link";
 
 export function Plans() {
   const { selectedPlan, setSelectedPlan, isYearly, setIsYearly } = useForm();
@@ -67,7 +68,17 @@ export function Plans() {
           ))}
         </div>
 
-        <div className="flex justify-center items-center gap-6 py-4 bg-very-light-grey mt-6 rounded-lg sm:mt-8">
+        {/* Button to learn more about the plans */}
+        <div className="mt-4 flex justify-center">
+          <Link
+            href="/services/website-development"
+            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+          >
+            Learn More About Plans
+          </Link>
+        </div>
+
+        <div className="flex justify-center items-center gap-6 py-4 bg-gray-200 mt-6 rounded-lg sm:mt-8">
           <Switch
             handlePlanTypeChange={handlePlanTypeChange}
             isYearly={isYearly}

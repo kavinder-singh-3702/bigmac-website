@@ -5,9 +5,9 @@ export function Switch({ isYearly, handlePlanTypeChange }) {
   return (
     <Fragment>
       <span
-        className={`text-sm font-normal ${
-          isYearly ? "text-grey" : "text-denim"
-        } duration-100`}
+        className={`text-sm font-bold ${
+          isYearly ? "text-gray-400" : "text-blue-600"
+        } transition duration-150`}
       >
         Monthly
       </span>
@@ -16,21 +16,26 @@ export function Switch({ isYearly, handlePlanTypeChange }) {
         checked={isYearly}
         onCheckedChange={handlePlanTypeChange}
         className={`
-              w-10 h-5 p-1 relative bg-denim rounded-full
-            `}
+          w-12 h-6 p-1 relative bg-gray-200 rounded-full transition-colors duration-300
+          ${isYearly ? "bg-blue-600" : "bg-gray-200"}
+        `}
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+        }}
       >
         <RadixSwitch.Thumb
           className={`
-                w-3 h-3 block bg-white rounded-full
-                ${isYearly ? "translate-x-5	" : "translate-x-0"} duration-300
-              `}
+            w-5 h-5 block bg-white rounded-full shadow-md transition-transform duration-300
+            ${isYearly ? "translate-x-6" : "translate-x-0"}
+          `}
         />
       </RadixSwitch.Root>
 
       <span
-        className={`text-sm font-normal ${
-          isYearly ? "text-denim" : "text-grey"
-        } duration-100`}
+        className={`text-sm font-bold ${
+          isYearly ? "text-blue-600" : "text-gray-400"
+        } transition duration-150`}
       >
         Yearly
       </span>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import { useForm } from "@/hooks/use-form";
 import { priceFormatter } from "@/util/price-formatter";
 
@@ -11,15 +10,14 @@ export function PlanCard({
   freeTrialDescription,
 }) {
   const { isYearly } = useForm();
-
   const planType = isYearly ? "yearly" : "monthly";
 
   return (
     <button
       className={`
         flex gap-4 justify-start items-center w-full rounded border-[1px] border-border-grey bg-white p-4 transition duration-200
-        hover:border-purple hover:bg-very-light-grey 
-        ${isSelected ? "border-purple bg-very-light-grey" : ""}
+        hover:border-purple-400 hover:bg-very-light-grey 
+        ${isSelected ? "border-purple-700 bg-gray-400" : ""}
         sm:flex-col sm:gap-0 sm:justify-between sm:items-start sm:h-[181px]
       `}
       onClick={() => handleSelectPlan({ name: plan.name, price: plan.price })}
@@ -30,7 +28,7 @@ export function PlanCard({
           {plan.name}
         </strong>
 
-        <span className="text-sm font-normal text-grey leading-5">
+        <span className="text-sm font-normal text-gray-500 leading-5">
           {priceFormatter(plan.price[planType], isYearly)}
         </span>
 
@@ -39,6 +37,13 @@ export function PlanCard({
             {freeTrialDescription}
           </span>
         )}
+
+        {/* Add the list of features */}
+        {/* <ul className="text-xs text-gray-500 leading-5">
+          {plan.features.map((feature, index) => (
+            <li key={index}>• {feature}</li>
+          ))}
+        </ul> */}
       </div>
     </button>
   );

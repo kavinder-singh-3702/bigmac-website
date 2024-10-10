@@ -1,29 +1,96 @@
 [
   {
-    "name": "Arcade",
+    "name": "Standard Plan",
     "price": {
-      "monthly": 9,
-      "yearly": 90
+      "monthly": 7999,
+      "yearly": 7999
     },
     "icon": "/images/icons/icon-arcade.svg",
-    "freeTrialDescription": "2 months free"
+    "freeTrialDescription": "+18% GST (₹1440)",
+    "features": [
+      "5 pages Website",
+      "1 Year Free Domain Name (.com, .in, .org)",
+      "1 Year Free Hosting (Unlimited Space)",
+      "Dynamic Website (Premium Design)",
+      "Admin Access",
+      "Lifetime 24/7 Free Hosting Support",
+      "Unlimited Images & Videos Upload",
+      "Free SSL Certificates",
+      "5 Free Email Id",
+      "SEO Friendly Website",
+      "100% Responsive Website",
+      "Live Chat Integration",
+      "Payment Gateway Integration",
+      "Social Media Integration",
+      "Call Button Integration",
+      "WhatsApp Button Integration",
+      "Inquiry Form",
+      "1 Year Free Technical Support For Website",
+      "Annual Renewal For Hosting Rs. 3000"
+    ]
   },
   {
-    "name": "Advanced",
+    "name": "Premium Plan",
     "price": {
-      "monthly": 12,
-      "yearly": 120
+      "monthly": 13999,
+      "yearly": 13999
     },
     "icon": "/images/icons/icon-advanced.svg",
-    "freeTrialDescription": "2 months free"
+    "freeTrialDescription": "+18% GST (₹2520)",
+    "features": [
+      "12 pages Website",
+      "1 Year Free Domain Name (.com, .in, .org)",
+      "1 Year Free Hosting (Unlimited Space)",
+      "Dynamic Website (Premium Design)",
+      "Google Search Console Setup",
+      "Admin Access",
+      "Lifetime 24/7 Free Hosting Support",
+      "Unlimited Images & Videos Upload",
+      "Free SSL Certificates",
+      "10 Free Email Id",
+      "SEO Friendly Website",
+      "100% Responsive Website",
+      "Live Chat Integration",
+      "Payment Gateway Integration",
+      "Social Media Integration",
+      "Call Button Integration",
+      "WhatsApp Button Integration",
+      "Inquiry Form",
+      "Woocommerce Features",
+      "1 Year Free Technical Support For Website",
+      "Annual Renewal For Hosting Rs. 3000"
+    ]
   },
   {
-    "name": "Pro",
+    "name": "Custom Plan",
     "price": {
-      "monthly": 15,
-      "yearly": 150
+      "monthly": "???",
+      "yearly": "???"
     },
     "icon": "/images/icons/icon-pro.svg",
-    "freeTrialDescription": "2 months free"
+    "freeTrialDescription": "+18% GST Applicable",
+    "features": [
+      "Pages: According to Requirement",
+      "1 Year Free Domain Name (.com, .in, .org)",
+      "1 Year Free Hosting (Unlimited Space)",
+      "Dynamic Website",
+      "Google Search Console Setup",
+      "Admin Access",
+      "Lifetime 24/7 Free Hosting Support",
+      "Unlimited Images & Videos Upload",
+      "Free SSL Certificates",
+      "10 Free Email Id",
+      "SEO Friendly Website",
+      "100% Responsive Website",
+      "Live Chat Integration",
+      "Payment Gateway Integration",
+      "Social Media Integration",
+      "Call Button Integration",
+      "WhatsApp Button Integration",
+      "Inquiry Form",
+      "Woocommerce Features",
+      "1 Year 24/7 Free Support For Website",
+      "Annual Renewal Rs. 4000"
+    ]
   }
 ]

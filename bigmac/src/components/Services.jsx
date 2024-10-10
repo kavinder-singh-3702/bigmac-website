@@ -51,7 +51,7 @@ const Services = () => {
       className="relative py-8 text-center text-white font-sans px-20"
       style={{ marginTop: "-70px" }}
     >
-      <h1 className="text-5xl font-bold mb-20">
+      <h1 className="text-5xl mt-20 font-bold mb-20">
         <span className="text-white">Our</span>{" "}
         <span className="text-[#00aaff]">Services</span>
       </h1>
