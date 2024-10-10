@@ -19,6 +19,8 @@ export function YourInfo() {
     dispatchEmailField,
     phoneNumberField,
     dispatchPhoneNumberField,
+    websiteField, // Add websiteField
+    dispatchWebsiteField, // Add dispatch function for websiteField
   } = useForm();
 
   const { handleNextStep, handlePreviousStep } = useFormStep();
@@ -69,6 +71,19 @@ export function YourInfo() {
       }
     }
 
+    // Validate website URL if provided
+    if (websiteField.value) {
+      const urlRegex =
+        /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/;
+      if (!urlRegex.test(websiteField.value)) {
+        dispatchWebsiteField({
+          type: ACTIONS.SET_ERROR,
+          errorMessage: "Website URL is invalid",
+        });
+        formHasError = true;
+      }
+    }
+
     return !formHasError;
   }
 
@@ -81,6 +96,7 @@ export function YourInfo() {
           name: nameField.value,
           email: emailField.value,
           phoneNumber: phoneNumberField.value,
+          website: websiteField.value, // Save website field to local storage
         })
       );
       handleNextStep();
@@ -92,7 +108,7 @@ export function YourInfo() {
       <Form.Card>
         <Form.Header
           title="Personal Info"
-          description="Please provide your name, email address, and phone number."
+          description="Please provide your name, email address, phone number, and website (optional)."
         />
 
         <div className="mt-5 flex flex-col gap-4">
@@ -130,6 +146,19 @@ export function YourInfo() {
               dispatchPhoneNumberField({ type: ACTIONS.CLEAR_ERROR })
             }
             hasError={phoneNumberField.hasError}
+          />
+          <TextInput
+            label="Website URL (optional)"
+            placeholder="e.g. https://example.com"
+            value={websiteField.value} // Add website field input
+            onChange={(value) =>
+              dispatchWebsiteField({ type: ACTIONS.SET_VALUE, value })
+            }
+            errorMessage={websiteField.errorMessage} // Display any website field errors
+            clearError={() =>
+              dispatchWebsiteField({ type: ACTIONS.CLEAR_ERROR })
+            }
+            hasError={websiteField.hasError}
           />
         </div>
       </Form.Card>

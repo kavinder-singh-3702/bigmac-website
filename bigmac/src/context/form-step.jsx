@@ -28,9 +28,26 @@ export const FormStepProvider = ({ children }) => {
 
   const handleNextStep = () => {
     const newStepValue = currentStep + 1;
+    console.log("step value: " + newStepValue);
     if (currentStep < steps.length) {
       setCurrentStep(newStepValue);
       saveValueToLocalStorage("currentStep", `${newStepValue}`);
+    }
+    if (newStepValue === steps.length) {
+      // Parse and log all localStorage data
+      const parsedLocalStorage = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        try {
+          // Try parsing the JSON value
+          parsedLocalStorage[key] = JSON.parse(value);
+        } catch (e) {
+          // If parsing fails, store the raw value
+          parsedLocalStorage[key] = value;
+        }
+      }
+      console.log("Parsed localStorage data:", parsedLocalStorage);
     }
   };
 

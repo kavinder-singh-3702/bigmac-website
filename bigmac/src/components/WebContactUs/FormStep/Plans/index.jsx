@@ -71,7 +71,7 @@ export function Plans() {
         {/* Button to learn more about the plans */}
         <div className="mt-4 flex justify-center">
           <Link
-            href="/services/website-development"
+            href="/services/website-development/#plans"
             className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
           >
             Learn More About Plans

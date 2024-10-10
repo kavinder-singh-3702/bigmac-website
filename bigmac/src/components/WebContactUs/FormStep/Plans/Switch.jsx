@@ -16,8 +16,10 @@ export function Switch({ isYearly, handlePlanTypeChange }) {
         checked={isYearly}
         onCheckedChange={handlePlanTypeChange}
         className={`
-          w-12 h-6 p-1 relative bg-gray-200 rounded-full transition-colors duration-300
-          ${isYearly ? "bg-blue-600" : "bg-gray-200"}
+          w-12 h-6 p-1 relative rounded-full transition-colors duration-300
+          ${
+            isYearly ? "bg-blue-600" : "bg-black"
+          } // Set to blue if yearly, black if monthly
         `}
         style={{
           display: "inline-flex",

@@ -1,4 +1,5 @@
 import WebsiteContactUs from "@/components/WebContactUs";
+import PricingPlans from "@/components/PricingPlans/PricingPlans";
 export default function WebsiteDevelopment() {
   return (
     <>
@@ -125,6 +126,7 @@ export default function WebsiteDevelopment() {
           </div>
         </div>
       </section>
+      <PricingPlans />
       {/* contact page */}
       <WebsiteContactUs />
 

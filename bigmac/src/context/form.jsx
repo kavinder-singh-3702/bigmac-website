@@ -14,6 +14,8 @@ export const FormContext = createContext({
   dispatchEmailField: () => {},
   phoneNumberField: initialState,
   dispatchPhoneNumberField: () => {},
+  websiteField: initialState, // Add websiteField
+  dispatchWebsiteField: () => {}, // Add dispatch function for websiteField
   isYearly: false,
   setIsYearly: () => {},
   selectedPlan: null,
@@ -69,6 +71,10 @@ export const FormProvider = ({ children }) => {
     handleFormState,
     initialState
   );
+  const [websiteField, dispatchWebsiteField] = useReducer(
+    handleFormState,
+    initialState
+  ); // Add reducer for websiteField
 
   // Plan
   const [isYearly, setIsYearly] = useState(false);
@@ -88,6 +94,7 @@ export const FormProvider = ({ children }) => {
     dispatchNameField({ type: ACTIONS.SET_VALUE, value: "" });
     dispatchEmailField({ type: ACTIONS.SET_VALUE, value: "" });
     dispatchPhoneNumberField({ type: ACTIONS.SET_VALUE, value: "" });
+    dispatchWebsiteField({ type: ACTIONS.SET_VALUE, value: "" }); // Reset websiteField
     setIsYearly(false);
     setSelectedPlan(null);
     setAddOns([]);
@@ -108,6 +115,13 @@ export const FormProvider = ({ children }) => {
         type: ACTIONS.SET_VALUE,
         value: yourInfoFromLocalStorage.phoneNumber,
       });
+      if (yourInfoFromLocalStorage.website) {
+        // Check for website value
+        dispatchWebsiteField({
+          type: ACTIONS.SET_VALUE,
+          value: yourInfoFromLocalStorage.website,
+        });
+      }
     }
 
     const planFromLocalStorage = getValueFromLocalStorage("plan");
@@ -129,6 +143,8 @@ export const FormProvider = ({ children }) => {
     dispatchEmailField,
     phoneNumberField,
     dispatchPhoneNumberField,
+    websiteField, // Add websiteField to context
+    dispatchWebsiteField, // Add website dispatch to context
     isYearly,
     setIsYearly,
     selectedPlan,
