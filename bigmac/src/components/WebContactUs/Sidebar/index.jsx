@@ -1,5 +1,5 @@
 import { useFormStep } from "@/hooks/use-form-steps";
-import { Step } from "./Step";
+import { Step } from "./step";
 
 export function Sidebar() {
   const { currentStep, steps } = useFormStep();
