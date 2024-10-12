@@ -24,7 +24,6 @@ export default function Header() {
   return (
     <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-10 top-0">
       <nav className="container mx-auto p-4 flex justify-between items-center">
-        {/* Logo */}
         <Link href="/" className="text-xl font-semibold">
           <Image
             src="/logo.svg"
@@ -34,8 +33,6 @@ export default function Header() {
             priority={true}
           />
         </Link>
-
-        {/* Hamburger icon for small screens */}
         <button
           className="block lg:hidden text-gray-600 dark:text-gray-300"
           onClick={toggleMenu}
@@ -55,8 +52,6 @@ export default function Header() {
             />
           </svg>
         </button>
-
-        {/* Menu items (hidden on small screens) */}
         <ul
           className={`${
             isMenuOpen ? "block" : "hidden"
@@ -67,8 +62,6 @@ export default function Header() {
               Home
             </Link>
           </li>
-
-          {/* Services Dropdown */}
           <li className="relative dropdown">
             <span
               className="cursor-pointer hover:text-blue-300 flex items-center"
