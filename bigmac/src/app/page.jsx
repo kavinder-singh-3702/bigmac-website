@@ -1,3 +1,4 @@
+
 import { BackgroundLines } from "@/components/Background/UI/background-lines";
 import { BackgroundBeamsWithCollision } from "../components/Background/UI/Beams";
 import EarthScene from "@/components/Earth";
@@ -30,6 +31,7 @@ export default function Layout({ children }) {
         "It involves evaluating the site’s functionality, usability, and performance from the end user's perspective. It ensures that the website meets user expectations, identifies issues or bugs (if any), and validates that it fulfills its intended purpose before deployment.",
     },
   ];
+
   return (
     <div>
       <main className="mt-16 mb-20">
@@ -41,11 +43,12 @@ export default function Layout({ children }) {
               BIGMAC AGENCY
             </p>
             <span className="block w-[45vw] text-gray-400 break-words pl-2 text-center text-2xl">
-              Get the best advices from our experts, including expert
-              developers, designers, enthusiasts and managers.
+              Get the best advice from our experts, including expert developers, designers, enthusiasts, and managers.
             </span>
           </div>
-          <EarthScene />
+          <div className="hidden md:block md:ml-[20vw] lg:ml-[65vw]">
+            <EarthScene />
+          </div>
         </section>
         <Services />
         <BackgroundBeamsWithCollision>

@@ -1,8 +1,8 @@
-// File: /Users/kavindersingh/Documents/bigmac-website/bigmac/src/app/services/EPC-Project/page.js
-import * as entry from '../../../../../src/app/services/EPC-Project/page.js'
+// File: C:\BIGMAC\bigmac-website\bigmac\src\app\services\epc-project\page.js
+import * as entry from '../../../../../src/app/services/epc-project/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../src/app/services/EPC-Project/page.js')
+type TEntry = typeof import('../../../../../src/app/services/epc-project/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
