@@ -46,7 +46,7 @@ export default function Layout({ children }) {
               Get the best advice from our experts, including expert developers, designers, enthusiasts, and managers.
             </span>
           </div>
-          <div className="hidden md:block md:ml-[20vw] lg:ml-[65vw]">
+          <div className="hidden md:block md:ml-[20vw] lg:ml-[45vw]">
             <EarthScene />
           </div>
         </section>
