@@ -1,155 +1,80 @@
-// "use client";
-// import {
-//   FaCode,
-//   FaDesktop,
-//   FaCog,
-//   FaChartBar,
-//   FaArrowRight,
-// } from "react-icons/fa";
-// import Router from "next/router";
 
-// export const serviceData = [
-//   {
-//     id: "website-development",
-//     title: "Web Development",
-//     shortDesc:
-//       "Full-stack web development services.Finding the right website developer will help you to get the right custom design websites and a seamless experience.",
-//     details:
-//       "Our web development services include full-stack development to build robust and scalable websites.Finding the right website developer will help you to get the right custom design websites and a seamless experience.",
-//     icon: FaCode,
-//   },
-//   {
-//     id: "EPC-Project",
-//     title: "EPC Installation and Management",
-//     shortDesc:
-//       "E-commerce website development.Discover limitless online possibilities with our exceptional e-commerce website development services.",
-//     details:
-//       "We develop e-commerce websites that are secure, scalable, and designed to convert visitors into customers.Discover limitless online possibilities with our exceptional e-commerce website development services.",
-//     icon: FaCog,
-//   },
-//   {
-//     id: "HR-Services",
-//     title: "HR-Services",
-//     shortDesc:
-//       "Comprehensive digital marketing services.Amplify your online presence with our dynamic digital marketing services.",
-//     details:
-//       "We provide comprehensive digital marketing services to help you reach your target audience and grow your business online.Amplify your online presence with our dynamic digital marketing services.",
-//     icon: FaChartBar,
-//   },
-// ];
-
-// const Services = () => {
-//   // const navigate = useNavigate();
-
-//   const handleCardClick = (id) => {
-//     Router.push(`/services/${id}`);
-//   };
-
-//   return (
-//     <section
-//       id="services"
-//       className="relative py-8 text-center text-white font-sans px-20"
-//       style={{ marginTop: "-70px" }}
-//     >
-//       <h1 className="text-5xl mt-20 font-bold mb-20">
-//         <span className="text-white">Our</span>{" "}
-//         <span className="text-[#00aaff]">Services</span>
-//       </h1>
-
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer select-none ">
-//         {serviceData.map((service) => (
-//           <div
-//             key={service.id}
-//             onClick={() => handleCardClick(service.id)}
-//             className="relative bg-[rgba(45,42,42,0.5)] rounded-lg shadow-lg p-6 h-72 flex flex-col justify-between transition-transform transform hover:-translate-y-2 hover:shadow-xl hover:bg-[rgba(50,50,50,0.8)] border-2 border-[rgba(0,0,0,0.2)]"
-//           >
-//             <div className="text-6xl text-[#00aaff] mb-2 transition-transform transform hover:scale-110">
-//               <service.icon />
-//             </div>
-//             <h2 className="text-2xl mb-2">{service.title}</h2>
-//             <p className="text-base text-gray-300">{service.shortDesc}</p>
-//             <div className="absolute bottom-5 right-5 text-3xl text-[#00aaff] transition-transform transform hover:scale-110">
-//               <FaArrowRight />
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Services;
 "use client";
 import {
   FaCode,
-  FaDesktop,
   FaCog,
   FaChartBar,
   FaArrowRight,
 } from "react-icons/fa";
-import Router from "next/router";
 
 export const serviceData = [
   {
     id: "website-development",
     title: "Web Development",
     shortDesc:
-      "Full-stack web development services. Finding the right website developer will help you to get the right custom design websites and a seamless experience.",
+      "Full-stack web development services. Get seamless experiences with custom design websites.",
     details:
-      "Our web development services include full-stack development to build robust and scalable websites. Finding the right website developer will help you to get the right custom design websites and a seamless experience.",
+      "Our services include full-stack development to build robust websites tailored to your needs.",
     icon: FaCode,
   },
   {
-    id: "EPC-Project",
-    title: "EPC Installation and Management",
+    id: "epc-project",
+    title: "EPC Installation & Management",
     shortDesc:
-      "E-commerce website development. Discover limitless online possibilities with our exceptional e-commerce website development services.",
+      "Secure and scalable e-commerce platforms that transform visitors into customers.",
     details:
-      "We develop e-commerce websites that are secure, scalable, and designed to convert visitors into customers. Discover limitless online possibilities with our exceptional e-commerce website development services.",
+      "We offer exceptional e-commerce website development for limitless online possibilities.",
     icon: FaCog,
   },
   {
-    id: "HR-Services",
-    title: "HR-Services",
+    id: "hr-services",
+    title: "HR Services",
     shortDesc:
-      "Comprehensive digital marketing services. Amplify your online presence with our dynamic digital marketing services.",
+      "End-to-end digital marketing solutions to amplify your online presence.",
     details:
-      "We provide comprehensive digital marketing services to help you reach your target audience and grow your business online. Amplify your online presence with our dynamic digital marketing services.",
+      "Comprehensive marketing strategies designed to grow your business online.",
     icon: FaChartBar,
   },
 ];
 
 const Services = () => {
   const handleCardClick = (id) => {
-    Router.push(`/services/${id}`);
+    window.open(`/services/${id}`, "_blank");
   };
 
   return (
     <section
       id="services"
-      className="relative py-8 text-center text-white font-sans px-6 sm:px-12 md:px-20"
-      style={{ marginTop: "-70px" }}
+      className="relative py-12 px-6 sm:px-8 lg:px-24 text-white"
+      style={{ marginTop: "-80px" }}
     >
-      <h1 className="text-4xl sm:text-5xl mt-16 sm:mt-20 font-bold mb-16 sm:mb-20">
+      <h1 className="text-4xl sm:text-6xl lg:text-5xl mt-20 font-bold tracking-wider text-center mb-16">
         <span className="text-white">Our</span>{" "}
         <span className="text-[#00aaff]">Services</span>
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 cursor-pointer select-none">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {serviceData.map((service) => (
           <div
             key={service.id}
             onClick={() => handleCardClick(service.id)}
-            className="relative bg-[rgba(45,42,42,0.5)] rounded-lg shadow-lg p-6 h-64 sm:h-72 flex flex-col justify-between transition-transform transform hover:-translate-y-2 hover:shadow-xl hover:bg-[rgba(50,50,50,0.8)] border-2 border-[rgba(0,0,0,0.2)]"
+            className="group relative bg-[#121212] rounded-2xl shadow-lg p-6 sm:p-8 h-auto sm:h-72 lg:h-80 flex flex-col justify-between cursor-pointer border border-[#2a2a2a] hover:border-[#00aaff] hover:shadow-xl transition-all duration-500"
           >
-            <div className="text-5xl sm:text-6xl text-[#00aaff] mb-2 transition-transform transform hover:scale-110">
+            <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#00aaff] transition-all duration-500 opacity-80"></div>
+
+            <div className="text-4xl sm:text-5xl text-[#00aaff] mb-2 sm:mb-4">
               <service.icon />
             </div>
-            <h2 className="text-xl sm:text-2xl mb-2">{service.title}</h2>
-            <p className="text-sm sm:text-base text-gray-300">
+
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-1 sm:mb-2 group-hover:text-[#00aaff] transition-colors duration-300">
+              {service.title}
+            </h2>
+
+            <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
               {service.shortDesc}
             </p>
-            <div className="absolute bottom-5 right-5 text-2xl sm:text-3xl text-[#00aaff] transition-transform transform hover:scale-110">
+
+            <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 text-2xl sm:text-3xl text-[#00aaff] opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-3 group-hover:scale-110">
               <FaArrowRight />
             </div>
           </div>
@@ -160,3 +85,5 @@ const Services = () => {
 };
 
 export default Services;
+
+
