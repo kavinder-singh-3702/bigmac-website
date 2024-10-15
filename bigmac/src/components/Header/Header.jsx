@@ -6,11 +6,10 @@ import Image from "next/image";
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // For mobile menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen); // Mobile menu toggle
-
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen); 
   const handleClickOutside = (e) => {
     if (!e.target.closest(".dropdown")) {
       setIsDropdownOpen(false);
@@ -20,6 +19,19 @@ export default function Header() {
   if (typeof window !== "undefined") {
     window.addEventListener("click", handleClickOutside);
   }
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    const headerHeight = document.querySelector("header").offsetHeight; 
+  
+    if (section) {
+      const sectionPosition = section.offsetTop - headerHeight;
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+  
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-10 top-0">
@@ -103,16 +115,21 @@ export default function Header() {
               </ul>
             )}
           </li>
-
           <li>
-            <Link href="/about" className="hover:text-blue-300">
+            <button
+              onClick={() => scrollToSection("about")}
+              className="hover:text-blue-300"
+            >
               About
-            </Link>
+            </button>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-blue-300">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="hover:text-blue-300"
+            >
               Contact
-            </Link>
+            </button>
           </li>
         </ul>
       </nav>
