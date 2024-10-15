@@ -61,7 +61,7 @@ export function FeaturesSectionDemo() {
   ];
   return (
     <>
-      <h1 className=" text-5xl font-bold text-center my-10 ">
+      <h1 id="about" className=" text-5xl font-bold text-center my-10 ">
         <span className="text-white">WHY JOIN</span>{" "}
         <span className="text-[#00aaff]">US</span>
       </h1>
@@ -104,3 +104,4 @@ const Feature = ({ title, description, icon, index }) => {
     </div>
   );
 };
+
