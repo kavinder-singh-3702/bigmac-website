@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
-
 export default function ContactForm() {
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <h1 className=" text-5xl font-bold text-center my-10 mb-20">
@@ -73,9 +76,9 @@ export default function ContactForm() {
                 viewBox="0 0 548.244 548.244"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                   data-original="#000000"
                 />
               </svg>
@@ -98,11 +101,18 @@ export default function ContactForm() {
                 />
               </svg>
               <a
+                href="#"
+                className="text-current text-sm ml-3"
+                onClick={handleClick}
+              >
+                info@example.com
+              </a>
+              {/* <a
                 href="javascript:void(0)"
                 className="text-current text-sm ml-3"
               >
                 info@example.com
-              </a>
+              </a> */}
             </li>
             <li className="flex items-center text-[#white]">
               <svg
@@ -118,11 +128,19 @@ export default function ContactForm() {
                 ></path>
               </svg>
               <a
+                href="#"
+                className="text-current text-sm ml-3"
+                onClick={handleClick}
+              >
+                +158 996 888
+              </a>
+
+              {/* <a
                 href="javascript:void(0)"
                 className="text-current text-sm ml-3"
               >
                 +158 996 888
-              </a>
+              </a> */}
             </li>
           </ul>
         </div>
@@ -131,8 +149,8 @@ export default function ContactForm() {
           <iframe
             src="https://maps.google.com/maps?q=new delhi, india&t=&z=13&ie=UTF8&iwloc=&output=embed"
             class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
-            frameborder="0"
-            allowfullscreen
+            frameBorder="0"
+            allowFullScreen
           ></iframe>
         </div>
       </div>
