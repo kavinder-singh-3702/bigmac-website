@@ -11,16 +11,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/services/website-development/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/website-development/page.js"
-    ],
-    "/services/website-development/contactUs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/website-development/contactUs/page.js"
-    ],
     "/services/hr-services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

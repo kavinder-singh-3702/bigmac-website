@@ -6,7 +6,7 @@ export default function ContactForm() {
   };
   return (
     <>
-      <h1 className=" text-5xl font-bold text-center my-10 mb-20">
+      <h1 id="contact" className=" text-5xl mt-20 font-bold text-center my-10 mb-20">
         <span className="text-white">Contact</span>{" "}
         <span className="text-[#00aaff]">US</span>
       </h1>
@@ -19,7 +19,6 @@ export default function ContactForm() {
             Have a specific inquiry or looking to explore new opportunities? Our
             experienced team is ready to engage with you.
           </p>
-
           <form>
             <div className="space-y-4 mt-8">
               <input
@@ -148,7 +147,7 @@ export default function ContactForm() {
         <div className="z-10 relative h-full max-md:min-h-[350px]">
           <iframe
             src="https://maps.google.com/maps?q=new delhi, india&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
+            className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
             frameBorder="0"
             allowFullScreen
           ></iframe>
