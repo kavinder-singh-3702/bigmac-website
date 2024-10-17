@@ -147,8 +147,6 @@ export default function HRServices() {
           }
         `}</style>
       </section>
-
-
       <section id="our-hr-services" className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-20 md:py-32 px-8 relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"
