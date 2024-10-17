@@ -81,7 +81,7 @@ export default function HRServices() {
           </div>
         </div>
 
-        <style jsx>{`
+        <style jsx>{
           .glow-center {
             filter: drop-shadow(0 0 25px rgba(0, 170, 255, 1));
             animation: pulse infinite;
@@ -145,7 +145,7 @@ export default function HRServices() {
               padding-top: 8rem; /* Adds more space on very small screens */
             }
           }
-        `}</style>
+        }</style>
       </section>
 
 
@@ -340,4 +340,4 @@ export default function HRServices() {
     </footer>
    </>
   );
-}
+} 
