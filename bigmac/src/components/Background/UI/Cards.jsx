@@ -14,9 +14,9 @@ import {
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Proven Track Record",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "successful projects across multiple industries prove our capability. Join startups and enterprises who trust Thinkscoop for consistent results.",
       icon: <IconTerminal2 />,
     },
     {
@@ -48,14 +48,15 @@ export function FeaturesSectionDemo() {
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "End-to-End Development Solutions",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "From concept to launch, Thinkscoop covers every stage of app development. We tailor our approach to meet your unique business needs.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Flexible Engagement",
+      description:
+        "Our developers work within your time zone, offering real-time collaboration to ensure seamless communication and project alignment.",
       icon: <IconHeart />,
     },
   ];
@@ -104,4 +105,3 @@ const Feature = ({ title, description, icon, index }) => {
     </div>
   );
 };
-

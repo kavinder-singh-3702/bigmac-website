@@ -1,7 +1,6 @@
-
 import { BackgroundLines } from "@/components/Background/UI/background-lines";
 import { BackgroundBeamsWithCollision } from "../components/Background/UI/Beams";
-import EarthScene from "@/components/Earth";
+import Hero from "@/components/Hero";
 import Services from "../components/Services";
 import { Timeline } from "@/components/Timeline/Timeline";
 import Statistics from "@/components/Statistics/Statistics";
@@ -38,18 +37,28 @@ export default function Layout({ children }) {
         {children}
         <section className="max-h-[100vh] bg-black flex justify-center items-center relative">
           <BackgroundLines />
-          <div className="title absolute top-[28%] left-[4.5%] flex flex-col justify-center items-center text-center">
-            <p className="text-white font-bold text-[8vh] leading-tight text-shadow-md">
+          <div className="z-50 title absolute top-[20%] left-[4.5%] flex flex-col justify-center items-center text-center md:top-[28%]">
+            <p
+              className="text-red-300 font-extrabold text-[7vh] md:text-[8vh] leading-tight bg-clip-text text-shadow-md"
+              // style={{
+              //   backgroundImage: "url('/matCaps/golden.png')",
+              //   backgroundSize: "cover", // Use "contain" instead of "cover"
+              //   backgroundPosition: "center",
+              //   backgroundSize: "150%",   }}
+            >
               BIGMAC AGENCY
             </p>
-            <span className="block w-[45vw] text-gray-400 break-words pl-2 text-center text-2xl">
-              Get the best advice from our experts, including expert developers, designers, enthusiasts, and managers.
+
+            <span className="block w-[90vw] md:w-[60vw] lg:w-[45vw] text-white break-words pl-2 text-center text-base md:text-xl lg:text-2xl">
+              Get the best advice from our experts, including expert developers,
+              designers, enthusiasts, and managers.
             </span>
           </div>
-          <div className="hidden md:block md:ml-[20vw] lg:ml-[45vw]">
-            <EarthScene />
+          <div className="h-screen absolute w-screen lg:translate-x-[50%] md:ml-20 z-0 lg:w-1/2">
+            <Hero />
           </div>
         </section>
+
         <Services />
         <BackgroundBeamsWithCollision>
           <Timeline data={ProcessData} className={"mt-20"} />
