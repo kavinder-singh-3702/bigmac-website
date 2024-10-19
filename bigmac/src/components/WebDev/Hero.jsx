@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const webHero = () => {
+const WebHero = () => {
   const [state, setState] = useState(false);
 
   // Replace javascript:void(0) paths with your paths
@@ -129,4 +129,4 @@ const webHero = () => {
     </section>
   );
 };
-export default webHero;
+export default WebHero;
