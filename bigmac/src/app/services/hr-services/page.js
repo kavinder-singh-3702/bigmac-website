@@ -93,7 +93,7 @@ export default function HRServices() {
           }
 
           .hover-group:hover {
-            transform: scale(1.01); /* Slight scale for interactivity */
+            transform: scale(1.01);
             transition: transform 0.3s ease-in-out;
           }
 
@@ -112,7 +112,6 @@ export default function HRServices() {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-20px); }
           }
-
 
           @media (max-width: 768px) {
             svg {
@@ -136,13 +135,13 @@ export default function HRServices() {
             }
 
             .pt-16 {
-              padding-top: 6rem; /* Adds extra margin on small screens */
+              padding-top: 6rem;
             }
           }
 
           @media (max-width: 480px) {
             .pt-16 {
-              padding-top: 8rem; /* Adds more space on very small screens */
+              padding-top: 8rem;
             }
           }
         `}</style>
@@ -175,7 +174,7 @@ export default function HRServices() {
             <div className="flex items-center space-x-8 group">
               <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
                 <h3 className="text-2xl md:text-3xl font-semibold text-white">E-commerce Solutions</h3>
-                <p className="text-gray-400 mt-4 max-w-md">Create secure, scalable, and customizable online stores to grow your business.</p>
+                <p className="text-gray-400 mt-4 max-w-md">Create secure, scalable, and customizable online stores to grow your business&apos;s online presence.</p>
               </div>
               <svg className="w-12 h-12 group-hover:rotate-180 transition-transform duration-300" viewBox="0 0 100 100"> 
               </svg>
@@ -197,9 +196,9 @@ export default function HRServices() {
           <h2 className="text-5xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
             Innovative Solutions
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
-            Elevate your business with cutting-edge technology, streamlined processes, and strategic insights that help you achieve success in today's fast-evolving digital landscape.
-          </p>
+        <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
+          Elevate your business with cutting-edge technology, streamlined processes, and strategic insights that help you achieve success in today&apos;s fast-evolving digital landscape.
+        </p>
 
           <div className="relative flex flex-wrap justify-center gap-12">
             <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-2">
@@ -301,7 +300,7 @@ export default function HRServices() {
           </div>
         </div>
       </div>
-          </section>
+     </section>
         <footer className="relative bg-gradient-to-b from-gray-900 to-black text-white py-8">
       <div
         className="absolute inset-0 bg-no-repeat bg-center opacity-10 pointer-events-none"
@@ -339,3 +338,4 @@ export default function HRServices() {
    </>
   );
 }
+
