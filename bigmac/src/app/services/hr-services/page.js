@@ -263,51 +263,61 @@ export default function HRServices() {
           </a>
         </div>
       </section>
-      <section id="how-it-works" className="bg-black text-white py-16 md:py-24 px-8">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-white tracking-widest">
+      <section id="how-it-works" className="relative bg-gradient-to-b from-black via-dark-blue to-light-blue text-white py-10 sm:py-16 md:py-28 px-4 sm:px-6 md:px-8 overflow-hidden">
+
+      <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-br from-blue-900 to-indigo-700 opacity-50 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-36 sm:w-48 h-36 sm:h-48 bg-gradient-to-br from-cyan-400 to-light-blue opacity-40 rounded-full blur-3xl"></div>
+
+      <div className="container mx-auto text-center z-10 relative">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-white tracking-wider uppercase">
           How It Works
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-          <div className="relative p-8 bg-gray-900 rounded-3xl shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl group">
-            <div className="absolute inset-0 w-full h-full opacity-10 group-hover:opacity-40 transition duration-300">
-              <svg className="w-full h-full" viewBox="0 0 100 100">
-                <polygon points="50,2 90,30 90,70 50,98 10,70 10,30" fill="rgba(255,255,255,0.01)" />
-              </svg>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 md:gap-16 z-10">
+          <div className="relative group p-6 sm:p-8 md:p-10 bg-gradient-to-r from-blue-900 to-gray-800 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl hover:bg-gradient-to-br from-cyan-700 to-indigo-800">
+            <div className="relative z-10">
+              <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 tracking-wide group-hover:text-yellow-300 transition duration-500">
+                Step 1: Consultation
+              </h3>
+              <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
+                We deeply understand your business goals to craft the perfect solution.
+              </p>
             </div>
-            <h3 className="text-2xl font-semibold mb-4 tracking-tight">Step 1: Consultation</h3>
-            <p className="text-gray-300">We deeply understand your business goals to craft the perfect solution.</p>
           </div>
           
-          <div className="relative p-8 bg-gray-900 rounded-3xl shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl group">
-            <div className="absolute inset-0 w-full h-full opacity-10 group-hover:opacity-40 transition duration-300">
-              <svg className="w-full h-full" viewBox="0 0 100 100">
-                <polygon points="50,2 90,30 90,70 50,98 10,70 10,30" fill="rgba(255,255,255,0.01)" />
-              </svg>
+          <div className="relative group p-6 sm:p-8 md:p-10 bg-gradient-to-r from-blue-900 to-gray-800 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl hover:bg-gradient-to-br from-cyan-700 to-blue-600">
+            <div className="relative z-10">
+              <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 tracking-wide group-hover:text-green-400 transition duration-500">
+                Step 2: Design & Development
+              </h3>
+              <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
+                Our team builds custom solutions uniquely tailored to your needs.
+              </p>
             </div>
-            <h3 className="text-2xl font-semibold mb-4 tracking-tight">Step 2: Design & Development</h3>
-            <p className="text-gray-300">Our team builds custom solutions uniquely tailored to your needs.</p>
           </div>
-
-          <div className="relative p-8 bg-gray-900 rounded-3xl shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl group">
-            <div className="absolute inset-0 w-full h-full opacity-10 group-hover:opacity-40 transition duration-300">
-              <svg className="w-full h-full" viewBox="0 0 100 100">
-                <polygon points="50,2 90,30 90,70 50,98 10,70 10,30" fill="rgba(255,255,255,0.01)" />
-              </svg>
+          
+          <div className="relative group p-6 sm:p-8 md:p-10 bg-gradient-to-r from-blue-900 to-gray-800 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl hover:bg-gradient-to-br from-cyan-700 to-indigo-800">
+            <div className="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-20 transition duration-500"></div>
+            <div className="relative z-10">
+              <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 tracking-wide group-hover:text-red-400 transition duration-500">
+                Step 3: Launch & Support
+              </h3>
+              <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
+                We ensure a seamless launch and provide continuous support post-launch.
+              </p>
             </div>
-            <h3 className="text-2xl font-semibold mb-4 tracking-tight">Step 3: Launch & Support</h3>
-            <p className="text-gray-300">We ensure a seamless launch and provide continuous support post-launch.</p>
           </div>
         </div>
       </div>
-     </section>
-        <footer className="relative bg-gradient-to-b from-gray-900 to-black text-white py-8">
+
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-blue-900 opacity-20 pointer-events-none"></div>
+    </section>
+
+   <footer className="relative bg-gradient-to-b from-gray-900 to-black text-white py-8">
       <div
         className="absolute inset-0 bg-no-repeat bg-center opacity-10 pointer-events-none"
       ></div>
-
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 relative z-10">
-
         <div className="text-lg font-semibold mb-6 md:mb-0 text-gray-300 hover:text-white transition-all duration-300 ease-in-out">
           © 2024 My Company
         </div>
