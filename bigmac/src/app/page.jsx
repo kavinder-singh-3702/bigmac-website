@@ -1,11 +1,14 @@
 import { BackgroundLines } from "@/components/Background/UI/background-lines";
 import { BackgroundBeamsWithCollision } from "../components/Background/UI/Beams";
-import Hero from "@/components/Hero";
+const Hero = dynamic(() => import("@/components/Hero"), {
+  ssr: false,
+});
 import Services from "../components/Services";
 import { Timeline } from "@/components/Timeline/Timeline";
 import Statistics from "@/components/Statistics/Statistics";
 import { FeaturesSectionDemo } from "@/components/Background/UI/Cards";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import dynamic from "next/dynamic";
 
 export default function Layout({ children }) {
   const ProcessData = [
