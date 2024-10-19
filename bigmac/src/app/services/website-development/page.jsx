@@ -3,6 +3,11 @@ import PricingPlans from "@/components/PricingPlans/PricingPlans";
 import WebDevelopmentExpertise from "@/components/Expertise/WebExp";
 import WebHero from "@/components/WebDev/Hero";
 
+export const metadata = {
+  title: "Website Development", // This will set the tab title
+  description:
+    "Get the best advice from our experts, including expert developers, designers, enthusiasts, and managers.", // You can add a meta description as well
+};
 export default function WebsiteDevelopment() {
   return (
     <>

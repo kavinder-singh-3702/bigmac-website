@@ -10,6 +10,12 @@ import { FeaturesSectionDemo } from "@/components/Background/UI/Cards";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import dynamic from "next/dynamic";
 
+export const metadata = {
+  title: "Welcome to Bigmac", // This will set the tab title
+  description:
+    "Get the best advice from our experts, including expert developers, designers, enthusiasts, and managers.", // You can add a meta description as well
+};
+
 export default function Layout({ children }) {
   const ProcessData = [
     {
