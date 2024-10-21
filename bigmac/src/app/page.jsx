@@ -9,7 +9,7 @@ import Statistics from "@/components/Statistics/Statistics";
 import { FeaturesSectionDemo } from "@/components/Background/UI/Cards";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import dynamic from "next/dynamic";
-
+import Footer from "@/components/Footer";
 export const metadata = {
   title: "Welcome to Bigmac", // This will set the tab title
   description:
@@ -76,6 +76,7 @@ export default function Layout({ children }) {
         <FeaturesSectionDemo />
         <ContactForm />
       </main>
+    <Footer />
     </div>
   );
 }
