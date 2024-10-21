@@ -2,7 +2,7 @@ import WebsiteContactUs from "@/components/WebContactUs";
 import PricingPlans from "@/components/PricingPlans/PricingPlans";
 import WebDevelopmentExpertise from "@/components/Expertise/WebExp";
 import WebHero from "@/components/WebDev/Hero";
-
+import Footer from "@/components/Footer";
 export const metadata = {
   title: "Website Development", // This will set the tab title
   description:
@@ -140,41 +140,7 @@ export default function WebsiteDevelopment() {
       <PricingPlans />
       <WebsiteContactUs />
 
-      <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-12">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-8">
-          <div className="text-lg font-semibold mb-6 md:mb-0">
-            © 2024 My Company
-          </div>
-          <nav>
-            <ul className="flex space-x-8 text-lg font-medium">
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-green-200 transition duration-300"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-green-200 transition duration-300"
-                >
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/WebsiteContactUs/Home"
-                  className="hover:text-green-200 transition duration-300"
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </footer>
+     <Footer />
     </>
   );
 }
