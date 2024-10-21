@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 export default function EPCProject() {
   return (
     <>
@@ -119,12 +120,12 @@ export default function EPCProject() {
       <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-br from-blue-900 to-indigo-700 opacity-50 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-36 sm:w-48 h-36 sm:h-48 bg-gradient-to-br from-cyan-400 to-light-blue opacity-40 rounded-full blur-3xl"></div>
 
-      <div className="container mx-auto text-center z-10 relative">
+      <div className="container mx-auto text-center relative">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-white tracking-wider uppercase">
           How It Works
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 md:gap-16 z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 md:gap-16">
           <div className="relative group p-6 sm:p-8 md:p-10 bg-gradient-to-r from-blue-900 to-gray-800 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl hover:bg-gradient-to-br from-cyan-700 to-indigo-800">
             <div className="relative z-10">
               <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 tracking-wide group-hover:text-yellow-300 transition duration-500">
@@ -163,38 +164,7 @@ export default function EPCProject() {
 
       <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-blue-900 opacity-20 pointer-events-none"></div>
       </section>
-      <footer className="relative bg-gradient-to-b from-gray-900 to-black text-white py-8">
-            <div
-              className="absolute inset-0 bg-no-repeat bg-center opacity-10 pointer-events-none"
-            ></div>
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 relative z-10">
-              <div className="text-lg font-semibold mb-6 md:mb-0 text-gray-300 hover:text-white transition-all duration-300 ease-in-out">
-                © 2024 My Company
-              </div>
-              <nav>
-                <ul className="flex space-x-8 text-lg font-medium text-gray-400">
-                  <li>
-                    <a href="#" className="relative group hover:text-[#00aaff] transition duration-300">
-                      Privacy Policy
-                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00aaff] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="relative group hover:text-[#00aaff] transition duration-300">
-                      Terms of Service
-                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00aaff] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="relative group hover:text-[#00aaff]-300 transition duration-300">
-                      Contact Us
-                      <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#00aaff]-300 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </footer>
+    <Footer />
     </>
   );
 }
