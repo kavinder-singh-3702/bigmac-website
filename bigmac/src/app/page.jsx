@@ -46,7 +46,7 @@ export default function Layout({ children }) {
         {children}
         <section className="max-h-[100vh] bg-black flex justify-center items-center relative">
           <BackgroundLines />
-          <div className="z-50 title absolute top-[20%] left-[4.5%] flex flex-col justify-center items-center text-center md:top-[28%]">
+          <div className="z-30 title absolute top-[20%] left-[4.5%] flex flex-col justify-center items-center text-center md:top-[28%]">
             <p
               className="text-red-300 font-extrabold text-[7vh] md:text-[8vh] leading-tight bg-clip-text text-shadow-md"
               // style={{
