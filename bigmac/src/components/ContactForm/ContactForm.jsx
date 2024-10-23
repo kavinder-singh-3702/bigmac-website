@@ -6,7 +6,7 @@ export default function ContactForm() {
   };
   return (
     <>
-      <h1 id="contact" className=" text-5xl mt-20 font-bold text-center my-10 mb-20">
+      <h1 id="contact" className=" text-5xl mt-20 font-bold text-center my-10 mb-20 bg-black">
         <span className="text-white">Contact</span>{" "}
         <span className="text-[#00aaff]">US</span>
       </h1>
