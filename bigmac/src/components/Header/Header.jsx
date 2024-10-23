@@ -146,7 +146,7 @@ export default function Header() {
       <div
         className={`${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed inset-0 z-40 bg-gray-900 bg-opacity-90 backdrop-blur-lg flex flex-col items-start p-6 transition-transform transform lg:hidden`}
+        } fixed inset-0 z-40 bg-black backdrop-blur-lg flex flex-col items-start p-6 transition-transform transform lg:hidden`}
       >
         <button onClick={toggleMenu} className="self-end text-white p-2 mb-4">
           <svg
