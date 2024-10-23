@@ -45,7 +45,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="relative py-12 px-6 sm:px-8 lg:px-24 text-white"
+      className="relative py-12 px-6 sm:px-8 lg:px-24 text-white bg-black"
       style={{ marginTop: "-80px" }}
     >
       <h1 className="text-4xl sm:text-6xl lg:text-5xl mt-20 font-bold tracking-wider text-center mb-16">
