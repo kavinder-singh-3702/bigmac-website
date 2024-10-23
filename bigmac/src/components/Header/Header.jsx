@@ -30,7 +30,7 @@ export default function Header() {
   };
   
   return (
-     <header className="bg-black dark:bg-gray-900 shadow-md fixed w-full z-50 top-0">
+     <header className="bg-black shadow-md fixed w-full z-50 top-0">
       <nav className="container mx-auto p-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-semibold">
           <Image
