@@ -264,10 +264,9 @@ export default function HRServices() {
           </a>
         </div>
       </section>
-      <section id="how-it-works" className="relative bg-gradient-to-b from-black via-dark-blue to-light-blue text-white py-10 sm:py-16 md:py-28 px-4 sm:px-6 md:px-8 overflow-hidden">
-
-      <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-br from-blue-900 to-indigo-700 opacity-50 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-36 sm:w-48 h-36 sm:h-48 bg-gradient-to-br from-cyan-400 to-light-blue opacity-40 rounded-full blur-3xl"></div>
+     <section id="how-it-works" className="relative bg-gradient-to-b from-black via-dark-blue-900 to-black text-white py-10 sm:py-16 md:py-28 px-4 sm:px-6 md:px-8 overflow-hidden">
+      <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-br from-blue-900 to-dark-blue opacity-50 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-36 sm:w-48 h-36 sm:h-48 bg-gradient-to-br from-blue-500 to-light-blue opacity-40 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto text-center relative">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-white tracking-wider uppercase">
