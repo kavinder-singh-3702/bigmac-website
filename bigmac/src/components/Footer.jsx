@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/f
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-gray-900 to-black text-white py-12 mt-12 overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-gray-900 to-black text-white py-6 overflow-hidden">
       <div className="absolute inset-0 bg-no-repeat bg-center opacity-10 pointer-events-none">
         <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
           <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" fill="rgba(255, 255, 255, 0.05)" />
