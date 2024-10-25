@@ -31,7 +31,7 @@ export const Timeline = ({ data }) => {
         <span className="text-white">Our Work</span>{" "}
         <span className="text-[#00aaff]">Process</span>
       </h1>
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl text-gray-200 mx-auto pb-20">
         {data.map((item, index) => (
           <div
             key={index}
