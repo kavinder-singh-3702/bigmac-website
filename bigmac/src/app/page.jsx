@@ -42,7 +42,7 @@ export default function Layout({ children }) {
 
   return (
     <div>
-      <main className="mt-16 mb-20">
+      <main className="mt-16 bg-black">
         {children}
         <section className="max-h-[100vh] bg-black flex justify-center items-center relative">
           <BackgroundLines />
@@ -75,8 +75,8 @@ export default function Layout({ children }) {
         <Statistics />
         <FeaturesSectionDemo />
         <ContactForm />
+         <Footer />
       </main>
-    <Footer />
     </div>
   );
 }
