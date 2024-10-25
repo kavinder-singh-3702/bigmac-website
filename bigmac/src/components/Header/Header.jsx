@@ -92,7 +92,7 @@ export default function Header() {
               <ChevronDownIcon className="w-5 h-5 ml-1" />
             </span>
             {isDropdownOpen && (
-              <ul className="absolute bg-white shadow-lg mt-2 rounded-lg p-4 text-gray-200 w-48 dark:bg-gray-800 dark:text-gray-200">
+              <ul className="absolute  bg-blue-900 shadow-lg mt-2 rounded-lg p-4 text-gray-200 w-48 dark:bg-gray-800 dark:text-gray-200">
                 <li className="py-1">
                   <Link
                     href="/services/website-development"
