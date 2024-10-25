@@ -61,7 +61,7 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <>
+      <div className="bg-black min-h-screen py-10">
       <h1 id="about" className=" text-5xl font-bold text-center my-10 ">
         <span className="text-white">WHY JOIN</span>{" "}
         <span className="text-[#00aaff]">US</span>
@@ -71,7 +71,7 @@ export function FeaturesSectionDemo() {
           <Feature key={feature.title} {...feature} index={index} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
