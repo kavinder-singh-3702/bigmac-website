@@ -30,7 +30,7 @@ export default function Header() {
   };
   
   return (
-     <header className="bg-black shadow-md fixed w-full z-50 top-0">
+    <header className="bg-black shadow-md fixed w-full z-50 top-0">
       <nav className="container mx-auto p-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-semibold">
           <Image
@@ -42,7 +42,7 @@ export default function Header() {
           />
         </Link>
         <button
-          className="block lg:hidden text-gray-600 dark:text-gray-300"
+          className="block lg:hidden text-gray-600 text-gray-300"
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
@@ -79,26 +79,25 @@ export default function Header() {
         </button>
         <ul className="hidden lg:flex items-center gap-8 pr-12">
           <li>
-            <Link href="/" className="hover:text-blue-300">
+            <Link href="/" className="text-gray-200 hover:text-blue-300">
               Home
             </Link>
           </li>
           <li className="relative dropdown">
             <span
-              className="cursor-pointer hover:text-blue-300 flex items-center"
+              className="cursor-pointer text-gray-200 hover:text-blue-300 flex items-center"
               onClick={toggleDropdown}
             >
               Services
               <ChevronDownIcon className="w-5 h-5 ml-1" />
             </span>
-
             {isDropdownOpen && (
-              <ul className="absolute bg-white shadow-lg mt-2 rounded-lg p-4 text-gray-900 w-48 dark:bg-gray-800 dark:text-gray-200">
+              <ul className="absolute bg-white shadow-lg mt-2 rounded-lg p-4 text-gray-200 w-48 dark:bg-gray-800 dark:text-gray-200">
                 <li className="py-1">
                   <Link
                     href="/services/website-development"
                     target="_blank"
-                    className="hover:text-blue-300"
+                    className="text-gray-200 hover:text-blue-300"
                   >
                     Website Development
                   </Link>
@@ -107,7 +106,7 @@ export default function Header() {
                   <Link
                     href="/services/epc-project"
                     target="_blank"
-                    className="hover:text-blue-300"
+                    className="text-gray-200 hover:text-blue-300"
                   >
                     EPC Project Work
                   </Link>
@@ -127,7 +126,7 @@ export default function Header() {
           <li>
             <button
               onClick={() => scrollToSection("about")}
-              className="hover:text-blue-300"
+              className="text-gray-200 hover:text-blue-300"
             >
               About
             </button>
@@ -135,7 +134,7 @@ export default function Header() {
           <li>
             <button
               onClick={() => scrollToSection("contact")}
-              className="hover:text-blue-300"
+              className="text-gray-200 hover:text-blue-300"
             >
               Contact
             </button>
@@ -166,14 +165,14 @@ export default function Header() {
         </button>
         <ul className="space-y-6 text-white w-full">
           <li className="py-2">
-            <Link href="/" className="block w-full text-lg hover:text-blue-300" onClick={handleLinkClick}>
+            <Link href="/" className="block w-full text-lg text-gray-200 hover:text-blue-300" onClick={handleLinkClick}>
               Home
             </Link>
           </li>
     
           <li className="py-2">
             <span
-              className="block w-full cursor-pointer text-lg hover:text-blue-300 flex items-center justify-between"
+              className="block w-full cursor-pointer text-lg text-gray-200 hover:text-blue-300 flex items-center justify-between"
               onClick={toggleDropdown}
             >
               Services
@@ -184,7 +183,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/services/website-development"
-                    className="block hover:text-blue-300"
+                    className="block text-gray-200 hover:text-blue-300"
                     target="_blank"
                     onClick={handleLinkClick}
                   >
@@ -194,7 +193,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/services/epc-project"
-                    className="block hover:text-blue-300"
+                    className="block text-gray-200 hover:text-blue-300"
                     target="_blank"
                     onClick={handleLinkClick}
                   >
@@ -204,7 +203,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/services/hr-services"
-                    className="block hover:text-blue-300"
+                    className="block text-gray-200 hover:text-blue-300"
                     target="_blank"
                     onClick={handleLinkClick}
                   >
@@ -222,7 +221,7 @@ export default function Header() {
                 scrollToSection("about");
                 handleLinkClick();
               }}
-              className="block w-full text-lg hover:text-blue-300"
+              className="block w-full text-gray-200 text-lg hover:text-blue-300"
             >
               About
             </button>
@@ -233,7 +232,7 @@ export default function Header() {
                 scrollToSection("contact");
                 handleLinkClick();
               }}
-              className="block w-full text-lg hover:text-blue-300"
+              className="block w-full text-gray-200 text-lg hover:text-blue-300"
             >
               Contact
             </button>
