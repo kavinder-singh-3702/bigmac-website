@@ -69,7 +69,7 @@ const WebHero = () => {
   );
 
   return (
-    <section className="">
+    <section className="bg-black">
       <div className=" mt-20 max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-300 overflow-hidden md:px-8 md:flex">
         <div className="flex-none space-y-5 max-w-xl items-center justify-center">
           <h1 className="text-7xl text-white font-extrabold sm:text-5xl">
