@@ -5,8 +5,8 @@ import {
   FaCog,
   FaChartBar,
   FaArrowRight,
+  FaMobileAlt, FaCloud, FaPalette, FaTools, FaChartLine, FaDatabase, FaCheck ,
 } from "react-icons/fa";
-
 export const serviceData = [
   {
     id: "website-development",
@@ -35,8 +35,56 @@ export const serviceData = [
       "Comprehensive marketing strategies designed to grow your business online.",
     icon: FaChartBar,
   },
+  {
+    id: "app-development",
+    title: "App Development",
+    shortDesc: "Building sleek, functional mobile apps.",
+    details: "Create mobile applications with intuitive designs and robust functionality.",
+    icon: FaMobileAlt,
+  },
+  {
+    id: "server-cloud-management",
+    title: "Server & Cloud Management",
+    shortDesc: "Reliable server and cloud solutions.",
+    details: "Optimize your business with secure and scalable server solutions.",
+    icon: FaCloud,
+  },
+  {
+    id: "ui-ux-design",
+    title: "UI/UX Design",
+    shortDesc: "Intelligent solutions for smarter business.",
+    details: "Crafting user-centric designs for exceptional digital experiences.",
+    icon: FaPalette,
+  },
+  {
+    id: "it-support-maintenance",
+    title: "IT Support And Maintenance",
+    shortDesc: "Always-on IT support and upkeep.",
+    details: "Ensuring your IT systems are always operational and up-to-date.",
+    icon: FaTools,
+  },
+  {
+    id: "it-consulting",
+    title: "IT Consulting And Strategy",
+    shortDesc: "Strategic IT guidance and solutions.",
+    details: "Providing expert insights to drive your IT goals and objectives.",
+    icon: FaChartLine,
+  },
+  {
+    id: "data-analytics-bi",
+    title: "Data Analytics And BI",
+    shortDesc: "Transforming data into actionable insights.",
+    details: "Leverage business intelligence to make data-driven decisions.",
+    icon: FaDatabase,
+  },
+  {
+    id: "qa-testing",
+    title: "Quality Assurance And Testing",
+    shortDesc: "Ensuring flawless performance.",
+    details: "Delivering high-quality products with rigorous testing and QA practices.",
+    icon: FaCheck,
+  },
 ];
-
 const Services = () => {
   const handleCardClick = (id) => {
     window.open(`/services/${id}`, "_blank");

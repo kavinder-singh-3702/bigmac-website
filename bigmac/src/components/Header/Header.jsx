@@ -120,6 +120,69 @@ export default function Header() {
                     HR Services
                   </Link>
                 </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/app-development"
+                    target="_blank"
+                    className="hover:text-blue-300"
+                  >
+                    App Development
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/data-analytics-bi"
+                    target="_blank"
+                    className="hover:text-blue-300"
+                  >
+                    Data Analytics And BI
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/server-cloud-management"
+                    target="_blank"
+                    className="hover:text-blue-300"
+                  >
+                    Server & Cloud Management
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/ui-ux-designt"
+                    target="_blank"
+                    className="hover:text-blue-300"
+                  >
+                    UI/UX Design
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/it-support-maintenance"
+                    target="_blank"
+                    className="hover:text-blue-300"
+                  >
+                    IT Support And Maintenance
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/it-consulting"
+                    target="_blank"
+                    className="hover:text-blue-300"
+                  >
+                    IT Consulting And Strategy
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/qa-testing"
+                    target="_blank"
+                    className="hover:text-blue-300"
+                  >
+                    Quality Assurance And Testing
+                  </Link>
+                </li>
               </ul>
             )}
           </li>
@@ -208,6 +271,69 @@ export default function Header() {
                     onClick={handleLinkClick}
                   >
                     HR Services
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/app-development"
+                    target="_blank"
+                    className="block text-gray-200 hover:text-blue-300"
+                  >
+                    App Development
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/data-analytics-bi"
+                    target="_blank"
+                    className="block text-gray-200 hover:text-blue-300"
+                  >
+                    Data Analytics And BI
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/server-cloud-management"
+                    target="_blank"
+                    className="block text-gray-200 hover:text-blue-300"
+                  >
+                    Server & Cloud Management
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/ui-ux-designt"
+                    target="_blank"
+                    className="block text-gray-200 hover:text-blue-300"
+                  >
+                    UI/UX Design
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/it-support-maintenance"
+                    target="_blank"
+                    className="block text-gray-200 hover:text-blue-300"
+                  >
+                    IT Support And Maintenance
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/it-consulting"
+                    target="_blank"
+                    className="block text-gray-200 hover:text-blue-300"
+                  >
+                    IT Consulting And Strategy
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    href="/services/qa-testing"
+                    target="_blank"
+                    className="block text-gray-200 hover:text-blue-300"
+                  >
+                    Quality Assurance And Testing
                   </Link>
                 </li>
               </ul>
