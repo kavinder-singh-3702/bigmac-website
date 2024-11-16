@@ -7,6 +7,7 @@ import Statistics from "@/components/Statistics/Statistics";
 import { FeaturesSectionDemo } from "@/components/Background/UI/Cards";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Footer from "@/components/Footer";
+import PortfolioSlider from '@/components/PortfolioSlider/PortfolioSlider';
 export const metadata = {
   title: "Welcome to Bigmac", // This will set the tab title
   description:
@@ -46,6 +47,7 @@ export default function Layout({ children }) {
           <Timeline data={ProcessData} className={"mt-14"} />
         </BackgroundBeamsWithCollision>
         <Statistics />
+        <PortfolioSlider />
         <FeaturesSectionDemo />
         <ContactForm />
         <Footer />
