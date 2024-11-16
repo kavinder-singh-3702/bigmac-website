@@ -365,31 +365,7 @@ export default function Header() {
               About
             </button>
           </li> 
-          <li>
-            {/* <Link
-              href="/"
-              className="text-gray-200 hover:text-blue-300 text-lg relative group"
-            > */}
-             <button
-              onClick={() => {
-                scrollToSection("contact");
-                handleLinkClick();
-              }}
-              className="block w-full text-gray-200 text-lg hover:text-blue-300"
-            >
-              Portfolio
-              <span className="absolute bottom-0 left-1/2 w-0 h-1 bg-blue-300 transition-all duration-500 ease-out group-hover:w-8 group-hover:left-[calc(50%-1rem)] group-hover:scale-110"></span>
-            </button>
-          </li>
-          <li>
-            <Link
-              href="/services/website-development"
-              className="text-gray-200 hover:text-blue-300 text-lg relative group"
-            >
-              Enquiry 
-              <span className="absolute bottom-0 left-1/2 w-0 h-1 bg-blue-300 transition-all duration-500 ease-out group-hover:w-8 group-hover:left-[calc(50%-1rem)] group-hover:scale-110"></span>
-            </Link>
-          </li>
+       
           <li className="py-2">
             <button
               onClick={() => {
