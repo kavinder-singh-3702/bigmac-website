@@ -43,7 +43,7 @@ export default function Layout({ children }) {
         <MainPage />
         <Services />
         <BackgroundBeamsWithCollision>
-          <Timeline data={ProcessData} className={"mt-20"} />
+          <Timeline data={ProcessData} className={"mt-14"} />
         </BackgroundBeamsWithCollision>
         <Statistics />
         <FeaturesSectionDemo />

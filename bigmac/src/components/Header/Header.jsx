@@ -11,15 +11,14 @@ export default function Header() {
 
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
   const handleLinkClick = () => {
     setIsMenuOpen(false);
     setIsDropdownOpen(false); 
   };
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
-    const headerHeight = document.querySelector("header").offsetHeight; 
-  
+    const headerHeight = document.querySelector("header").offsetHeight;
+
     if (section) {
       const sectionPosition = section.offsetTop - headerHeight;
       window.scrollTo({
@@ -28,11 +27,11 @@ export default function Header() {
       });
     }
   };
-  
+
   return (
     <header className="bg-black shadow-md fixed w-full z-50 top-0">
-      <nav className="container mx-auto p-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-semibold">
+      <nav className="container mx-auto p-6 lg:pl-12 flex justify-between items-center">
+        <Link href="/" className="text-xl font-semibold flex items-center">
           <Image
             src="/logo.svg"
             alt="Logo"
@@ -40,9 +39,10 @@ export default function Header() {
             height={50}
             priority={true}
           />
+          <span className="text-white ml-4 text-2xl">BIGMAC</span>
         </Link>
         <button
-          className="block lg:hidden text-gray-600 text-gray-300"
+          className="block lg:hidden text-gray-300"
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
@@ -77,50 +77,44 @@ export default function Header() {
             </svg>
           )}
         </button>
-        <ul className="hidden lg:flex items-center gap-8 pr-12">
+        <ul className="hidden lg:flex items-center gap-12 pr-16">
           <li>
-            <Link href="/" className="text-gray-200 hover:text-blue-300">
+            <Link
+              href="/"
+              className="text-gray-200 hover:text-blue-300 text-lg relative group"
+            >
               Home
+              <span className="absolute bottom-0 left-1/2 w-0 h-1 bg-blue-300 transition-all duration-500 ease-out group-hover:w-8 group-hover:left-[calc(50%-1rem)] group-hover:scale-110"></span>
             </Link>
           </li>
-          <li className="relative dropdown">
+          <li className="relative">
             <span
-              className="cursor-pointer text-gray-200 hover:text-blue-300 flex items-center"
+              className="cursor-pointer text-gray-200 hover:text-blue-300 text-lg flex items-center group"
               onClick={toggleDropdown}
             >
               Services
               <ChevronDownIcon className="w-5 h-5 ml-1" />
+              <span className="absolute bottom-0 left-1/2 w-0 h-1 bg-blue-300 transition-all duration-500 ease-out group-hover:w-8 group-hover:left-[calc(50%-1rem)] group-hover:scale-110"></span>
             </span>
             {isDropdownOpen && (
-              <ul className="absolute  bg-blue-900 shadow-lg mt-2 rounded-lg p-4 text-gray-200 w-48 dark:bg-gray-800 dark:text-gray-200">
-                <li className="py-1">
+              <ul className="absolute bg-blue-900 shadow-lg mt-2 rounded-lg p-4 text-gray-200 w-64">
+                <li className="py-2">
                   <Link
                     href="/services/website-development"
-                    target="_blank"
-                    className="text-gray-200 hover:text-blue-300"
+                    className="text-gray-200 hover:text-blue-300 block"
                   >
                     Website Development
                   </Link>
                 </li>
-                <li className="py-1">
-                  <Link
-                    href="/services/epc-project"
-                    target="_blank"
-                    className="text-gray-200 hover:text-blue-300"
-                  >
-                    EPC Project Work
-                  </Link>
-                </li>
-                <li className="py-1">
+                <li className="py-2">
                   <Link
                     href="/services/hr-services"
-                    target="_blank"
-                    className="hover:text-blue-300"
+                    className="text-gray-200 hover:text-blue-300 block"
                   >
                     HR Services
                   </Link>
                 </li>
-                <li className="py-1">
+               <li className="py-1">
                   <Link
                     href="/services/app-development"
                     target="_blank"
@@ -189,22 +183,23 @@ export default function Header() {
           <li>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-gray-200 hover:text-blue-300"
+              className="text-gray-200 hover:text-blue-300 text-lg relative group"
             >
               About
+              <span className="absolute bottom-0 left-1/2 w-0 h-1 bg-blue-300 transition-all duration-500 ease-out group-hover:w-8 group-hover:left-[calc(50%-1rem)] group-hover:scale-110"></span>
             </button>
           </li>
           <li>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-gray-200 hover:text-blue-300"
+              className="text-gray-200 hover:text-blue-300 text-lg relative group"
             >
               Contact
+              <span className="absolute bottom-0 left-1/2 w-0 h-1 bg-blue-300 transition-all duration-500 ease-out group-hover:w-8 group-hover:left-[calc(50%-1rem)] group-hover:scale-110"></span>
             </button>
           </li>
         </ul>
       </nav>
-
       <div
         className={`${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
