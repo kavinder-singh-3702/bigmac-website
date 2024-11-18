@@ -30,16 +30,16 @@ export default function Header() {
 
   return (
     <header className="bg-black shadow-md fixed w-full z-50 top-0">
-      <nav className="container mx-auto p-6 lg:pl-12 flex justify-between items-center">
+      <nav className="container mx-auto p-6 lg:pl-20 flex justify-between items-center">
         <Link href="/" className="text-xl font-semibold flex items-center">
-          <Image
+          {/* <Image
             src="/logo.svg"
             alt="Logo"
             width={50}
             height={50}
             priority={true}
-          />
-          <span className="text-white ml-4 text-2xl">BIGMAC</span>
+          /> */}
+          <span className="text-white ml-20 text-2xl">BIGMAC</span>
         </Link>
         <button
           className="block lg:hidden text-gray-300"
@@ -77,7 +77,7 @@ export default function Header() {
             </svg>
           )}
         </button>
-        <ul className="hidden lg:flex items-center gap-12 pr-16">
+        <ul className="hidden lg:flex items-center gap-12 pr-24">
           <li>
             <Link
               href="/"
@@ -381,4 +381,3 @@ export default function Header() {
     </header>
   );
 }
-

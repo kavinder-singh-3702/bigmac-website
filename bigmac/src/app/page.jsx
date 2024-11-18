@@ -8,6 +8,7 @@ import { FeaturesSectionDemo } from "@/components/Background/UI/Cards";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Footer from "@/components/Footer";
 import PortfolioSlider from '@/components/PortfolioSlider/PortfolioSlider';
+import About from '@/components/About/About';
 export const metadata = {
   title: "Welcome to Bigmac", // This will set the tab title
   description:
@@ -17,24 +18,29 @@ export const metadata = {
 export default function Layout({ children }) {
   const ProcessData = [
     {
-      title: "Strategy",
+      title: "Discovery & Strategy",
       content:
-        "We provide comprehensive website design and development services including layout design, development, optimization and maintenance etc. to achieve success and business goals.",
+       "We start by understanding your unique needs and goals, crafting a tailored strategy that aligns with your business objectives.",
     },
     {
-      title: "Design",
+      title: "Design & Planning",
       content:
-        "We create aesthetic and user-friendly designs as per your needs. It includes creating visually appealing layouts, selecting appropriate color schemes, typography, and graphics. We focus on reflecting the brand identity and message effectively through lucrative designs.",
+        "Our team creates innovative designs and develops detailed plans to ensure every aspect of the project is user-centric and optimized for success.",
     },
     {
-      title: "Development",
+      title: "Development & Implementation",
       content:
-        "The development process includes front-end and back-end programming, content management system implementation, ending up with rigorous testing to ensure quality.",
+        "We build robust, scalable solutions—whether it's a website, app, or IT infrastructure—using the latest technologies and best practices.",
     },
     {
-      title: "UA Testing",
+      title: "Testing & Quality Assurance",
       content:
-        "It involves evaluating the site’s functionality, usability, and performance from the end user's perspective. It ensures that the website meets user expectations, identifies issues or bugs (if any), and validates that it fulfills its intended purpose before deployment.",
+        "Our rigorous testing ensures everything works as expected, with a focus on functionality, security, and user experience.",
+    },
+    {
+      title: "Launch & Support",
+      content:
+        "Once everything is ready, we launch your solution and provide ongoing support, ensuring smooth operations and continued success.",
     },
   ];
 
@@ -46,6 +52,7 @@ export default function Layout({ children }) {
         <BackgroundBeamsWithCollision>
           <Timeline data={ProcessData} className={"mt-14"} />
         </BackgroundBeamsWithCollision>
+        <About/>
         <Statistics />
         <PortfolioSlider />
         <FeaturesSectionDemo />

@@ -11,12 +11,11 @@ export default function HeroSection() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
             <div>
-              <h1 className="text-4xl font-normal text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-                Connecting Devs with Employers
+              <h1 className="text-3xl font-normal text-white sm:text-3xl lg:text-5xl xl:text-5xl">
+              Innovating the Future of Communication, Technology, and Web Development
               </h1>
               <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint.
+              Let's Build the Future Together
               </p>
               <form className="relative mt-8 sm:mt-12">
                 <div className="relative">
@@ -36,7 +35,7 @@ export default function HeroSection() {
                     href="/services/website-development"
                     className="inline-flex items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase bg-white rounded-full sm:w-auto sm:py-3 hover:opacity-90"
                   >
-                    Find A Developer
+                    Contact Us Today!"
                   </Link>
                 </div>
               </form>

@@ -16,47 +16,47 @@ export function FeaturesSectionDemo() {
     {
       title: "Proven Track Record",
       description:
-        "successful projects across multiple industries prove our capability. Join startups and enterprises who trust Thinkscoop for consistent results.",
+        "Our proven track record across industries ensures you get reliable, high-quality results.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "Effortless Experience",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "We make complex services simple and intuitive, delivering a seamless experience.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
+      title: "Competitive Pricing",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Get the best value with our transparent, competitive pricing and no hidden fees.",
       icon: <IconCurrencyDollar />,
     },
     {
       title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      description: "Enjoy uninterrupted service with our robust infrastructure and 100% uptime guarantee.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Scalable Solutions",
+      description: "Our flexible solutions grow with your business, adapting to your evolving needs.",
       icon: <IconRouteAltLeft />,
     },
     {
       title: "24/7 Customer Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "We're available around the clock, providing support whenever you need it.",
       icon: <IconHelp />,
     },
     {
-      title: "End-to-End Development Solutions",
+      title: "End-to-End Solutions",
       description:
-        "From concept to launch, Thinkscoop covers every stage of app development. We tailor our approach to meet your unique business needs.",
+        "From start to finish, we handle every stage of your project with tailored, end-to-end solutions.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "Flexible Engagement",
+      title: "Flexible Collaboration",
       description:
-        "Our developers work within your time zone, offering real-time collaboration to ensure seamless communication and project alignment.",
+        "We work in your time zone and collaborate in real-time to keep your projects on track.",
       icon: <IconHeart />,
     },
   ];
@@ -99,7 +99,7 @@ const Feature = ({ title, description, icon, index }) => {
           {title}
         </span>
       </div>
-      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+      <p className="text-sm text-neutral-300 max-w-xs relative z-10 px-10">
         {description}
       </p>
     </div>
