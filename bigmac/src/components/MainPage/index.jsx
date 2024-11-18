@@ -15,7 +15,7 @@ export default function HeroSection() {
               Innovating the Future of Communication, Technology, and Web Development
               </h1>
               <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">
-              Let's Build the Future Together
+              Let&apos;s Build the Future Together
               </p>
               <form className="relative mt-8 sm:mt-12">
                 <div className="relative">
@@ -35,7 +35,7 @@ export default function HeroSection() {
                     href="/services/website-development"
                     className="inline-flex items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase bg-white rounded-full sm:w-auto sm:py-3 hover:opacity-90"
                   >
-                    Contact Us Today!"
+                    Contact Us Today!
                   </Link>
                 </div>
               </form>
