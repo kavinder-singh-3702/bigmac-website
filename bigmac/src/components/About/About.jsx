@@ -1,5 +1,5 @@
 
-
+import React from "react";
 export default function AboutUs() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4">
