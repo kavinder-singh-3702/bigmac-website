@@ -39,7 +39,8 @@ export default function Header() {
             height={50}
             priority={true}
           /> */}
-          <span className="text-white ml-20 text-2xl">BIGMAC</span>
+
+        <span className="text-white ml-4 sm:ml-20 text-2xl">BIGMAC</span>
         </Link>
         <button
           className="block lg:hidden text-gray-300"
