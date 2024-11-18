@@ -1,8 +1,8 @@
+
 "use client";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
 import Slider from "react-slick";
 import Image from "next/image";
 
@@ -58,21 +58,24 @@ const PortfolioSlider = () => {
   };
 
   return (
-    <div className="w-full h-auto py-10 px-6">
+    <div className="w-[90%] mx-auto h-auto py-10 px-20"> 
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-6 sm:mb-8">
-        My Portfolio
+        Portfolio
       </h2>
       <Slider {...settings}>
         {portfolioItems.map((item) => (
-          <div key={item.id} className="px-2">
-            <div className="relative mx-auto w-full sm:max-w-[80%] h-[60vh] sm:h-[45vh] overflow-hidden rounded-lg sm:rounded-xl shadow-md sm:shadow-lg">
+          <div
+            key={item.id}
+            className="px-2 sm:px-4" 
+          >
+            <div className="relative mx-auto w-full sm:max-w-[90%] h-[60vh] sm:h-[50vh] overflow-hidden rounded-lg sm:rounded-xl shadow-md sm:shadow-lg">
               <Image
                 alt={item.title}
                 src={item.image}
                 fill
                 className="object-cover transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-3 sm:p-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-4 sm:p-6 opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <h3 className="text-lg sm:text-2xl font-semibold text-white">
                   {item.title}
                 </h3>
@@ -90,134 +93,22 @@ const PortfolioSlider = () => {
 
 const CustomNextArrow = ({ onClick }) => (
   <div
-    className="absolute right-4 text-white cursor-pointer bg-blue-600 hover:bg-blue-700 p-1 sm:p-2 rounded-full transform -translate-y-1/2 shadow-md transition-all duration-300"
+    className="absolute right-2 text-white cursor-pointer bg-blue-600 hover:bg-blue-700 p-2 sm:p-3 rounded-full transform -translate-y-1/2 shadow-md transition-all duration-300"
     style={{ top: "50%", zIndex: 1 }}
     onClick={onClick}
   >
-    <FaArrowRight size={14} />
+    <FaArrowRight size={18} />
   </div>
 );
 
 const CustomPrevArrow = ({ onClick }) => (
   <div
-    className="absolute left-4 text-white cursor-pointer bg-blue-600 hover:bg-blue-700 p-1 sm:p-2 rounded-full transform -translate-y-1/2 shadow-md transition-all duration-300"
+    className="absolute left-2 text-white cursor-pointer bg-blue-600 hover:bg-blue-700 p-2 sm:p-3 rounded-full transform -translate-y-1/2 shadow-md transition-all duration-300"
     style={{ top: "50%", zIndex: 1 }}
     onClick={onClick}
   >
-    <FaArrowLeft size={14} />
+    <FaArrowLeft size={18} />
   </div>
 );
 
 export default PortfolioSlider;
-
-// "use client";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
-// import Slider from "react-slick";
-// import Image from "next/image";
-
-// const portfolioItems = [
-//   {
-//     id: 1,
-//     title: "Modern Website Design",
-//     image: "/assets/banner/image1.png",
-//     description: "A sleek, responsive design for modern businesses.",
-//     link: "#",
-//   },
-//   {
-//     id: 2,
-//     title: "E-commerce Platform",
-//     image: "/assets/banner/image4.jpg",
-//     description: "A seamless shopping experience for online stores.",
-//     link: "#",
-//   },
-//   {
-//     id: 3,
-//     title: "Mobile App Interface",
-//     image: "/assets/banner/image3.jpg",
-//     description: "Elegant and user-friendly mobile app designs.",
-//     link: "#",
-//   },
-// ];
-
-// const PortfolioSlider = () => {
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 4000,
-//     nextArrow: <CustomNextArrow />,
-//     prevArrow: <CustomPrevArrow />,
-//     responsive: [
-//       {
-//         breakpoint: 1024, 
-//         settings: {
-//           slidesToShow: 2,
-//         },
-//       },
-//       {
-//         breakpoint: 600, 
-//         settings: {
-//           slidesToShow: 1,
-//         },
-//       },
-//     ],
-//   };
-
-//   return (
-//     <div className="w-full h-auto py-10 px-6">
-//       <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-6 sm:mb-8">
-//         My Portfolio
-//       </h2>
-//       <Slider {...settings}>
-//         {portfolioItems.map((item) => (
-//           <div key={item.id} className="px-2">
-//             <div className="w-full h-[60vh] sm:h-[45vh] relative overflow-hidden rounded-lg sm:rounded-xl shadow-md sm:shadow-lg">
-//               <Image
-//                 alt={item.title}
-//                 src={item.image}
-//                 fill
-//                 className="object-cover transition-transform duration-500"
-//               />
-//               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-3 sm:p-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
-//                 <h3 className="text-lg sm:text-2xl font-semibold text-white">
-//                   {item.title}
-//                 </h3>
-//                 <p className="text-xs sm:text-sm text-gray-300 mt-2">
-//                   {item.description}
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// };
-
-// const CustomNextArrow = ({ onClick }) => (
-//   <div
-//     className="absolute right-4 text-white cursor-pointer bg-blue-600 hover:bg-blue-700 p-1 sm:p-2 rounded-full transform -translate-y-1/2 shadow-md transition-all duration-300"
-//     style={{ top: "50%", zIndex: 1 }}
-//     onClick={onClick}
-//   >
-//     <FaArrowRight size={14} />
-//   </div>
-// );
-
-// const CustomPrevArrow = ({ onClick }) => (
-//   <div
-//     className="absolute left-4 text-white cursor-pointer bg-blue-600 hover:bg-blue-700 p-1 sm:p-2 rounded-full transform -translate-y-1/2 shadow-md transition-all duration-300"
-//     style={{ top: "50%", zIndex: 1 }}
-//     onClick={onClick}
-//   >
-//     <FaArrowLeft size={14} />
-//   </div>
-// );
-
-// export default PortfolioSlider;
