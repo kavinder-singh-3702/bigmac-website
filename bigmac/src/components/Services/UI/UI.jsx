@@ -122,7 +122,7 @@ export default function WebDevelopment() {
           </div>
         </section>
         <section className="bg-black p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-white mb-6">Web Development FAQs</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">UX/UI Design FAQs</h2>
           <div className="space-y-4">
             {[
               {

@@ -20,9 +20,6 @@ export default function WebDevelopment() {
             "Web Development",
             "App Development",
             "Server & Cloud Management",
-            "AI and Machine Learning Solutions",
-            "Blockchain Solutions",
-            "Cybersecurity Solutions",
             "Data Analytics and BI",
             "Quality Assurance and Testing",
             "IT Support and Maintenance",
@@ -37,12 +34,6 @@ export default function WebDevelopment() {
             </li>
           ))}
         </ul>
-        <div className="mt-8 text-gray-400">
-          <h3 className="font-semibold mb-3 text-white">Opening Hours</h3>
-          <p>Mon - Fri: 10:00 AM - 6:00 PM</p>
-          <p>Sat - Sun: Closed</p>
-          <p className="font-bold mt-2 text-blue-400">Emergency: 24/7</p>
-        </div>
       </aside>
       <div className="w-full lg:w-3/4 space-y-8">
         <section className="relative bg-black rounded-lg shadow-lg p-6">

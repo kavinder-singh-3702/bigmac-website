@@ -1,23 +1,35 @@
+
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation"; 
 
 const WebDevelopmentExpertise = () => {
+  const router = useRouter();
+
   const categories = [
     {
       title: "UX/UI Design",
       description:
         "Our team designs intuitive and engaging user experiences (UX) and interfaces (UI) that keep your visitors coming back. We focus on user-centric design, ensuring your website or app is easy to navigate, visually appealing, and optimized for conversions.",
+      href: "/services/ui-ux-design",
     },
     {
       title: "App Development",
       description:
         "We create custom mobile apps for iOS and Android that deliver a seamless experience across devices. From simple apps to complex, feature-rich solutions, we build secure, scalable apps that meet your business objectives.",
+      href: "/services/app-development",
     },
     {
       title: "IT Consulting & Strategy",
       description:
         "Our IT consulting services help businesses optimize their technology strategy, implement new solutions, and improve operational efficiency. We offer expert guidance on cloud solutions, digital transformation, and IT infrastructure to help you stay ahead of the competition.",
+      href: "/services/it-consulting",
     },
   ];
+
+  const handleNavigation = (href) => {
+    router.push(href);
+  };
 
   return (
     <div className="bg-black text-white py-16">
@@ -33,7 +45,8 @@ const WebDevelopmentExpertise = () => {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-gray-800 to-gray-700 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-green-500 relative group"
+              className="bg-gradient-to-r from-gray-800 to-gray-700 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-green-500 relative group cursor-pointer"
+              onClick={() => handleNavigation(category.href)}
             >
               <div className="absolute inset-0 opacity-20 group-hover:opacity-40 bg-gradient-to-r from-black via-blue-500 to-purple-900 rounded-xl blur-lg transition-all duration-500"></div>
               <h3 className="text-3xl font-semibold mb-4 text-white">
@@ -49,3 +62,4 @@ const WebDevelopmentExpertise = () => {
 };
 
 export default WebDevelopmentExpertise;
+

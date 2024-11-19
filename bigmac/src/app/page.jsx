@@ -14,7 +14,6 @@ export const metadata = {
   description:
     "Get the best advice from our experts, including expert developers, designers, enthusiasts, and managers.", // You can add a meta description as well
 };
-
 export default function Layout({ children }) {
   const ProcessData = [
     {

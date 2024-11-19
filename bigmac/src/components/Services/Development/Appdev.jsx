@@ -117,36 +117,7 @@ export default function WebDevelopment() {
             </ul>
           </div>
         </section>
-        <section className="bg-black p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-white mb-6">Web Development FAQs</h2>
-          <div className="space-y-4">
-            {[
-              {
-                question: "What Technologies Do You Use For Web Development?",
-                answer: "We use modern technologies such as React, Next.js, Node.js, and other cutting-edge tools to create dynamic, high-performance applications.",
-              },
-              {
-                question: "How Long Does It Take To Develop A Website?",
-                answer: "Timelines vary based on project scope, typically ranging from a few weeks to a few months depending on complexity.",
-              },
-              {
-                question: "Do You Provide Maintenance After The Website Is Launched?",
-                answer: "Absolutely. We offer comprehensive support and maintenance to keep your site updated and secure.",
-              },
-            ].map((faq, index) => (
-              <div key={index} className="border-b border-gray-700 pb-4">
-                <button
-                  onClick={() => toggleFaq(index)}
-                  className="flex justify-between w-full text-left text-white font-semibold py-3 hover:text-blue-400"
-                >
-                  {faq.question}
-                  <span>{faqOpen === index ? "-" : "+"}</span>
-                </button>
-                {faqOpen === index && <p className="text-gray-400 pl-4 mt-2">{faq.answer}</p>}
-              </div>
-            ))}
-          </div>
-        </section>
+
 
       </div>   
     </div>

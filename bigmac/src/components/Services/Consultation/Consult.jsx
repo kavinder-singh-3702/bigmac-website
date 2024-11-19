@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import { FaLightbulb, FaRocket, FaCheckCircle } from "react-icons/fa";
-import { MdDevices, MdSecurity } from "react-icons/md";
+import { FaCheckCircle } from "react-icons/fa";
+
 import { useState } from "react";
 import Footer from "@/components/Footer";
 export default function WebDevelopment() {
@@ -20,9 +20,6 @@ export default function WebDevelopment() {
             "Web Development",
             "App Development",
             "Server & Cloud Management",
-            "AI and Machine Learning Solutions",
-            "Blockchain Solutions",
-            "Cybersecurity Solutions",
             "Data Analytics and BI",
             "Quality Assurance and Testing",
             "IT Support and Maintenance",
@@ -53,127 +50,63 @@ export default function WebDevelopment() {
           Our team of IT consultants helps businesses align their technology strategies with their overall goals. We analyze your current systems, recommend best practices, and help you implement solutions that drive business growth. Whether you need cloud solutions, digital transformation, or strategic IT planning, we are here to guide you every step of the way.
           </p>
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {[
-            {
-              icon: <FaLightbulb className="text-blue-400 text-4xl mr-4 transition-transform duration-300 transform hover:rotate-12" />,
-              title: "Customizable Solutions",
-              description: "Designed uniquely for your business needs.",
-            },
-            {
-              icon: <MdDevices className="text-blue-400 text-4xl mr-4 transition-transform duration-300 transform hover:scale-110" />,
-              title: "Responsive Design",
-              description: "Seamlessly adaptable to any device.",
-            },
-            {
-              icon: <FaRocket className="text-blue-400 text-4xl mr-4 transition-transform duration-300 transform hover:-rotate-6" />,
-              title: "SEO-friendly Development",
-              description: "Enhance your online visibility.",
-            },
-            {
-              icon: <MdSecurity className="text-blue-400 text-4xl mr-4 transition-transform duration-300 transform hover:scale-110" />,
-              title: "Seamless Integration",
-              description: "Effortlessly fits into your systems.",
-            },
-          ].map((feature, index) => (
-            <div
-              key={index}
-              className="flex items-start p-6 border border-gray-700 rounded-lg shadow-lg bg-black transition-shadow duration-300 hover:shadow-xl"
-            >
-              {feature.icon}
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-                <p className="text-gray-400">{feature.description}</p>
-              </div>
-            </div>
-          ))}
-        </section>
-        <section className="flex flex-col lg:flex-row p-6 rounded-lg">
-          <div className="w-full lg:w-1/2 flex items-center justify-center p-4">
-            <Image
-              src="/assets/banner/image2.jpg"
-              alt="Web Development Illustration"
-              width={500}
-              height={160}
-              className="w-full h-40 object-cover mb-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
-            />
-          </div>
-          <div className="w-full lg:w-1/2 p-4">
-            <h2 className="text-2xl font-bold text-white mb-4">Choose Our QA & Testing</h2>
-            <p className="text-gray-400 mb-4">Ensuring Flawless Application Performance</p>
-            <ul className="space-y-2">
-              <li className="flex items-center text-gray-400">
-                <FaCheckCircle className="text-blue-400 mr-2" />
-                Comprehensive testing strategies
-              </li>
-              <li className="flex items-center text-gray-400">
-                <FaCheckCircle className="text-blue-400 mr-2" />
-                Automated testing tools
-              </li>
-              <li className="flex items-center text-gray-400">
-                <FaCheckCircle className="text-blue-400 mr-2" />
-                Experienced QA team
-              </li>
-              <li className="flex items-center text-gray-400">
-                <FaCheckCircle className="text-blue-400 mr-2" />
-                Regression testing for stable releases
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section className="bg-black p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-white mb-6">Web Development FAQs</h2>
-          <div className="space-y-4">
-            {[
-              {
-                question: "What Technologies Do You Use For Web Development?",
-                answer: "We use modern technologies such as React, Next.js, Node.js, and other cutting-edge tools to create dynamic, high-performance applications.",
-              },
-              {
-                question: "How Long Does It Take To Develop A Website?",
-                answer: "Timelines vary based on project scope, typically ranging from a few weeks to a few months depending on complexity.",
-              },
-              {
-                question: "Do You Provide Maintenance After The Website Is Launched?",
-                answer: "Absolutely. We offer comprehensive support and maintenance to keep your site updated and secure.",
-              },
-            ].map((faq, index) => (
-              <div key={index} className="border-b border-gray-700 pb-4">
-                <button
-                  onClick={() => toggleFaq(index)}
-                  className="flex justify-between w-full text-left text-white font-semibold py-3 hover:text-blue-400"
-                >
-                  {faq.question}
-                  <span>{faqOpen === index ? "-" : "+"}</span>
-                </button>
-                {faqOpen === index && <p className="text-gray-400 pl-4 mt-2">{faq.answer}</p>}
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className="bg-black p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-white mb-6">Client Testimonials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              {
-                quote: "They provided exceptional service; our website is faster and more engaging than ever.",
-                author: "John Doe, CEO of TechCorp",
-              },
-              {
-                quote: "Professional team with extensive expertise in web development. Highly recommended!",
-                author: "Jane Smith, Founder of Creatix",
-              },
-            ].map((testimonial, index) => (
-              <div
-                key={index}
-                className="p-6 border border-gray-700 rounded-lg shadow-md bg-black hover:shadow-lg transition-shadow duration-300"
-              >
-                <p className="text-gray-400 italic">&quot;{testimonial.quote}&quot;</p>
-                <p className="text-white font-semibold mt-3">{testimonial.author}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <section className="flex flex-col items-center bg-black p-8 rounded-lg shadow-lg gap-8">
+
+  <div className="w-full lg:w-3/4 p-6">
+    <h2 className="text-3xl font-extrabold text-white mb-6 tracking-wide text-center">
+      Why Choose Us?
+    </h2>
+    <ul className="space-y-6">
+      <li className="flex items-start text-gray-300">
+        <FaCheckCircle className="text-green-400 mr-3 mt-1" />
+        <div>
+          <span className="font-semibold text-white">Customer-Centric Approach:</span>
+          <p className="mt-1">
+            We listen closely to your needs and focus on delivering a solution that fits your business. Our team collaborates with you to ensure that the end product aligns with your vision.
+          </p>
+        </div>
+      </li>
+      <li className="flex items-start text-gray-300">
+        <FaCheckCircle className="text-green-400 mr-3 mt-1" />
+        <div>
+          <span className="font-semibold text-white">Cutting-Edge Technologies:</span>
+          <p className="mt-1">
+            We use the latest tools and technologies to build websites and applications that are secure, scalable, and future-ready.
+          </p>
+        </div>
+      </li>
+      <li className="flex items-start text-gray-300">
+        <FaCheckCircle className="text-green-400 mr-3 mt-1" />
+        <div>
+          <span className="font-semibold text-white">Agile Development Process:</span>
+          <p className="mt-1">
+            Our agile methodology ensures faster delivery, with constant communication and adaptability to changes.
+          </p>
+        </div>
+      </li>
+      <li className="flex items-start text-gray-300">
+        <FaCheckCircle className="text-green-400 mr-3 mt-1" />
+        <div>
+          <span className="font-semibold text-white">Ongoing Support:</span>
+          <p className="mt-1">
+            We don’t just deliver the project and walk away. Our team provides comprehensive support and training, ensuring that you’re comfortable with the final product.
+          </p>
+        </div>
+      </li>
+      <li className="flex items-start text-gray-300">
+        <FaCheckCircle className="text-green-400 mr-3 mt-1" />
+        <div>
+          <span className="font-semibold text-white">Expert Team:</span>
+          <p className="mt-1">
+            Our in-house team is made up of skilled developers, designers, and IT consultants with years of experience in the industry.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+   
       </div>   
     </div>
   <Footer />

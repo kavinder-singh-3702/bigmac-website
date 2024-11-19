@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-import Image from "next/image";
+
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -32,14 +32,6 @@ export default function Header() {
     <header className="bg-black shadow-md fixed w-full z-50 top-0">
       <nav className="container mx-auto p-6 lg:pl-20 flex justify-between items-center">
         <Link href="/" className="text-xl font-semibold flex items-center">
-          {/* <Image
-            src="/logo.svg"
-            alt="Logo"
-            width={50}
-            height={50}
-            priority={true}
-          /> */}
-
         <span className="text-white ml-4 sm:ml-20 text-2xl">BIGMAC</span>
         </Link>
         <button
