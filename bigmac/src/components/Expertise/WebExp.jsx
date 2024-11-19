@@ -3,56 +3,43 @@ import React from "react";
 const WebDevelopmentExpertise = () => {
   const categories = [
     {
-      title: "Frontend",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
-      bgColor: "bg-gradient-to-r from-blue-500 to-blue-700",
+      title: "UX/UI Design",
+      description:
+        "Our team designs intuitive and engaging user experiences (UX) and interfaces (UI) that keep your visitors coming back. We focus on user-centric design, ensuring your website or app is easy to navigate, visually appealing, and optimized for conversions.",
     },
     {
-      title: "Backend",
-      technologies: ["Node.js", "Django", "Express", "Ruby on Rails"],
-      bgColor: "bg-gradient-to-r from-pink-500 to-pink-700",
+      title: "App Development",
+      description:
+        "We create custom mobile apps for iOS and Android that deliver a seamless experience across devices. From simple apps to complex, feature-rich solutions, we build secure, scalable apps that meet your business objectives.",
     },
     {
-      title: "Tools & Libraries",
-      technologies: ["Webpack", "Babel", "ESLint", "Jest"],
-      bgColor: "bg-gradient-to-r from-green-500 to-green-700",
-    },
-    {
-      title: "Cloud Services",
-      technologies: ["AWS", "Azure", "Firebase", "Heroku"],
-      bgColor: "bg-gradient-to-r from-yellow-500 to-yellow-700",
+      title: "IT Consulting & Strategy",
+      description:
+        "Our IT consulting services help businesses optimize their technology strategy, implement new solutions, and improve operational efficiency. We offer expert guidance on cloud solutions, digital transformation, and IT infrastructure to help you stay ahead of the competition.",
     },
   ];
 
   return (
-    <div className="bg-black text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-4">
-          Our Expertise in Web Development
+    <div className="bg-black text-white py-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+        <h2 className="text-5xl font-extrabold text-center mb-8 text-transparent bg-black">
+          More Services
         </h2>
-        <p className="text-lg text-center mb-8">
+        <p className="text-lg text-center mb-12 text-gray-300">
           At Bigmac, we combine innovative design with technical excellence to
           deliver impactful, user-centric web solutions.
         </p>
-        <div className="text-center mb-8">
-          <button className="bg-gray-700 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
-            Get in Touch
-          </button>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {categories.map((category, index) => (
             <div
               key={index}
-              className={`p-8 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 ${category.bgColor} hover:opacity-90`}
+              className="bg-gradient-to-r from-gray-800 to-gray-700 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-green-500 relative group"
             >
-              <h3 className="text-2xl font-semibold mb-4">{category.title}</h3>
-              <ul className="space-y-2">
-                {category.technologies.map((tech, idx) => (
-                  <li key={idx} className="text-md">
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+              <div className="absolute inset-0 opacity-20 group-hover:opacity-40 bg-gradient-to-r from-black via-blue-500 to-purple-900 rounded-xl blur-lg transition-all duration-500"></div>
+              <h3 className="text-3xl font-semibold mb-4 text-white">
+                {category.title}
+              </h3>
+              <p className="text-md text-gray-300">{category.description}</p>
             </div>
           ))}
         </div>

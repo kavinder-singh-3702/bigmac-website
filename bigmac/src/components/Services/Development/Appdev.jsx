@@ -20,9 +20,6 @@ export default function WebDevelopment() {
             "Web Development",
             "App Development",
             "Server & Cloud Management",
-            "AI and Machine Learning Solutions",
-            "Blockchain Solutions",
-            "Cybersecurity Solutions",
             "Data Analytics and BI",
             "Quality Assurance and Testing",
             "IT Support and Maintenance",
@@ -37,12 +34,6 @@ export default function WebDevelopment() {
             </li>
           ))}
         </ul>
-        <div className="mt-8 text-gray-400">
-          <h3 className="font-semibold mb-3 text-white">Opening Hours</h3>
-          <p>Mon - Fri: 10:00 AM - 6:00 PM</p>
-          <p>Sat - Sun: Closed</p>
-          <p className="font-bold mt-2 text-blue-400">Emergency: 24/7</p>
-        </div>
       </aside>
       <div className="w-full lg:w-3/4 space-y-8">
         <section className="relative bg-black rounded-lg shadow-lg p-6">
@@ -53,9 +44,9 @@ export default function WebDevelopment() {
             height={160}
             className="w-full h-40 object-cover mb-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
           />
-          <h2 className="text-3xl font-bold text-white mb-4">Web Development</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">App Development</h2>
           <p className="text-gray-400 text-base leading-relaxed">
-            Our web development services deliver custom, responsive websites that captivate users. Our solutions are scalable and tailored to fit your business goals, focusing on aesthetics, functionality, and user experience.
+          In today&apos;s mobile-first world, having a functional and engaging app is crucial for any business. Our app development team is skilled in creating apps that are not only visually appealing but also fast, secure, and scalable. We use the latest technologies to build apps for both iOS and Android, providing a seamless experience for your customers on any device.
           </p>
         </section>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -156,29 +147,7 @@ export default function WebDevelopment() {
             ))}
           </div>
         </section>
-        <section className="bg-black p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold text-white mb-6">Client Testimonials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              {
-                quote: "They provided exceptional service; our website is faster and more engaging than ever.",
-                author: "John Doe, CEO of TechCorp",
-              },
-              {
-                quote: "Professional team with extensive expertise in web development. Highly recommended!",
-                author: "Jane Smith, Founder of Creatix",
-              },
-            ].map((testimonial, index) => (
-              <div
-                key={index}
-                className="p-6 border border-gray-700 rounded-lg shadow-md bg-black hover:shadow-lg transition-shadow duration-300"
-              >
-                <p className="text-gray-400 italic">&quot;{testimonial.quote}&quot;</p>
-                <p className="text-white font-semibold mt-3">{testimonial.author}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+
       </div>   
     </div>
   <Footer />

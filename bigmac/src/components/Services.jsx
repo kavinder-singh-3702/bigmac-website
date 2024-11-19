@@ -27,20 +27,20 @@ import {
 export const serviceData = [
   {
     id: "website-development",
-    title: "Web Development",
+    title: "Web designing & Development",
     shortDesc:
       "Building custom, scalable websites that deliver exceptional user experiences.",
     details:
       "Our services include full-stack development to build robust websites tailored to your needs.",
     icon: FaCode,
   },
-  {
-    id: "app-development",
-    title: "App Development",
-    shortDesc: "Designing sleek, high-performance mobile apps for iOS and Android platforms.",
-    details: "Create mobile applications with intuitive designs and robust functionality.",
-    icon: FaMobileAlt,
-  },
+  // {
+  //   id: "app-development",
+  //   title: "App Development",
+  //   shortDesc: "Designing sleek, high-performance mobile apps for iOS and Android platforms.",
+  //   details: "Create mobile applications with intuitive designs and robust functionality.",
+  //   icon: FaMobileAlt,
+  // },
   {
     id: "server-cloud-management",
     title: "Server & Cloud Management",
@@ -48,13 +48,13 @@ export const serviceData = [
     details: "Optimize your business with secure and scalable server solutions.",
     icon: FaCloud,
   },
-  {
-    id: "ui-ux-design",
-    title: "UI/UX Design",
-    shortDesc: "Creating intuitive, user-centered designs that elevate your digital experience.",
-    details: "Crafting user-centric designs for exceptional digital experiences.",
-    icon: FaPalette,
-  },
+  // {
+  //   id: "ui-ux-design",
+  //   title: "UI/UX Design",
+  //   shortDesc: "Creating intuitive, user-centered designs that elevate your digital experience.",
+  //   details: "Crafting user-centric designs for exceptional digital experiences.",
+  //   icon: FaPalette,
+  // },
   {
     id: "it-support-maintenance",
     title: "IT Support And Maintenance",
@@ -62,20 +62,20 @@ export const serviceData = [
     details: "Ensuring your IT systems are always operational and up-to-date.",
     icon: FaTools,
   },
-  {
-    id: "it-consulting",
-    title: "IT Consulting And Strategy",
-    shortDesc: "Strategic IT guidance to help you align technology with your business goals.",
-    details: "Providing expert insights to drive your IT goals and objectives.",
-    icon: FaChartLine,
-  },
-  {
-    id: "data-analytics-bi",
-    title: "Data Analytics And BI",
-    shortDesc: "Turning data into actionable insights that drive smarter business decisions.",
-    details: "Leverage business intelligence to make data-driven decisions.",
-    icon: FaDatabase,
-  },
+  // {
+  //   id: "it-consulting",
+  //   title: "IT Consulting And Strategy",
+  //   shortDesc: "Strategic IT guidance to help you align technology with your business goals.",
+  //   details: "Providing expert insights to drive your IT goals and objectives.",
+  //   icon: FaChartLine,
+  // },
+  // {
+  //   id: "data-analytics-bi",
+  //   title: "Data Analytics And BI",
+  //   shortDesc: "Turning data into actionable insights that drive smarter business decisions.",
+  //   details: "Leverage business intelligence to make data-driven decisions.",
+  //   icon: FaDatabase,
+  // },
   // {
   //   id: "qa-testing",
   //   title: "Quality Assurance And Testing",

@@ -37,12 +37,7 @@ export default function WebDevelopment() {
             </li>
           ))}
         </ul>
-        <div className="mt-8 text-gray-400">
-          <h3 className="font-semibold mb-3 text-white">Opening Hours</h3>
-          <p>Mon - Fri: 10:00 AM - 6:00 PM</p>
-          <p>Sat - Sun: Closed</p>
-          <p className="font-bold mt-2 text-blue-400">Emergency: 24/7</p>
-        </div>
+    
       </aside>
       <div className="w-full lg:w-3/4 space-y-8">
         <section className="relative bg-black rounded-lg shadow-lg p-6">
@@ -53,9 +48,9 @@ export default function WebDevelopment() {
             height={160}
             className="w-full h-40 object-cover mb-4 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
           />
-          <h2 className="text-3xl font-bold text-white mb-4">Web Development</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">IT Consulting & Strategy</h2>
           <p className="text-gray-400 text-base leading-relaxed">
-            Our web development services deliver custom, responsive websites that captivate users. Our solutions are scalable and tailored to fit your business goals, focusing on aesthetics, functionality, and user experience.
+          Our team of IT consultants helps businesses align their technology strategies with their overall goals. We analyze your current systems, recommend best practices, and help you implement solutions that drive business growth. Whether you need cloud solutions, digital transformation, or strategic IT planning, we are here to guide you every step of the way.
           </p>
         </section>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">

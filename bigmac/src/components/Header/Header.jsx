@@ -103,32 +103,36 @@ export default function Header() {
                   <Link
                     href="/services/website-development"
                     className="text-gray-200 hover:text-blue-300 block"
+                    onClick={handleLinkClick}
                   >
-                    Website Development
+                    Web designing & Development
                   </Link>
                 </li>
                 <li className="py-2">
                   <Link
                     href="/services/hr-services"
                     className="text-gray-200 hover:text-blue-300 block"
+                    onClick={handleLinkClick}
                   >
                     HR Services
                   </Link>
                 </li>
-               <li className="py-1">
+               {/* <li className="py-1">
                   <Link
                     href="/services/app-development"
                     target="_blank"
                     className="hover:text-blue-300"
+                    onClick={handleLinkClick}
                   >
                     App Development
                   </Link>
-                </li>
+                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/data-analytics-bi"
                     target="_blank"
                     className="hover:text-blue-300"
+                    onClick={handleLinkClick}
                   >
                     Data Analytics And BI
                   </Link>
@@ -138,6 +142,7 @@ export default function Header() {
                     href="/services/server-cloud-management"
                     target="_blank"
                     className="hover:text-blue-300"
+                    onClick={handleLinkClick}
                   >
                     Server & Cloud Management
                   </Link>
@@ -147,6 +152,7 @@ export default function Header() {
                     href="/services/ui-ux-designt"
                     target="_blank"
                     className="hover:text-blue-300"
+                    onClick={handleLinkClick}
                   >
                     UI/UX Design
                   </Link>
@@ -156,6 +162,7 @@ export default function Header() {
                     href="/services/it-support-maintenance"
                     target="_blank"
                     className="hover:text-blue-300"
+                    onClick={handleLinkClick}
                   >
                     IT Support And Maintenance
                   </Link>
@@ -165,6 +172,7 @@ export default function Header() {
                     href="/services/it-consulting"
                     target="_blank"
                     className="hover:text-blue-300"
+                    onClick={handleLinkClick}
                   >
                     IT Consulting And Strategy
                   </Link>
@@ -174,6 +182,7 @@ export default function Header() {
                     href="/services/qa-testing"
                     target="_blank"
                     className="hover:text-blue-300"
+                    onClick={handleLinkClick}
                   >
                     Quality Assurance And Testing
                   </Link>
