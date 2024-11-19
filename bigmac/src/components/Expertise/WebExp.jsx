@@ -34,7 +34,7 @@ const WebDevelopmentExpertise = () => {
   return (
     <div className="bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-        <h2 className="text-5xl font-extrabold text-center mb-8 text-transparent bg-black">
+        <h2 className="text-5xl font-extrabold text-white text-center mb-8 text-transparent bg-black">
           More Services
         </h2>
         <p className="text-lg text-center mb-12 text-gray-300">
@@ -45,10 +45,10 @@ const WebDevelopmentExpertise = () => {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-gray-800 to-gray-700 p-6 rounded-xl shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-green-500 relative group cursor-pointer"
+              className="bg-black p-6 rounded-xl shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl relative group cursor-pointer"
               onClick={() => handleNavigation(category.href)}
             >
-              <div className="absolute inset-0 opacity-20 group-hover:opacity-40 bg-gradient-to-r from-black via-blue-500 to-purple-900 rounded-xl blur-lg transition-all duration-500"></div>
+              <div className="absolute inset-0 opacity-20 group-hover:opacity-40 bg-gradient-to-r from-black via-blue-900 to-blue-900 rounded-xl blur-lg transition-all duration-500"></div>
               <h3 className="text-3xl font-semibold mb-4 text-white">
                 {category.title}
               </h3>

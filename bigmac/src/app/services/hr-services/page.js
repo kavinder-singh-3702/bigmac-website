@@ -19,12 +19,12 @@ export default function HRServices() {
           <div className="w-72 h-72 border-4 border-[#00aaff] rounded-full absolute bottom-32 right-20 animate-slowSpin scale-105 transition-transform duration-500 shadow-2xl shadow-[#00ccff]/50"></div>
         </div>
         <div className="relative flex flex-col md:flex-row items-center justify-between w-full h-full px-4 md:px-12 lg:px-24 space-y-10 md:space-y-0">
-          <div className="md:w-1/2 space-y-6 text-center md:text-left transition-transform transform hover:scale-105 duration-700 ease-in-out">
-            <h1 className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white to-[#00aaff] leading-tight hover:scale-105 transition duration-500 ease-in-out drop-shadow-lg">
-              Cutting-Edge HR Solutions
+          <div className="md:w-1/2 space-y-6 text-center md:text-left transition-transform transform duration-700 ease-in-out">
+            <h1 className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white to-[#00aaff] leading-tight transition duration-500 ease-in-out drop-shadow-lg">
+            Specialized HR Services for Technical Industries
             </h1>
             <p className="text-lg md:text-2xl max-w-2xl mx-auto md:mx-0 text-gray-300 leading-relaxed tracking-wide hover:text-white transition-colors duration-300 ease-in">
-              Revolutionize workforce management with solutions tailored for the modern era.
+            At BIGMAC, we provide expert recruitment services for industries like Satellite Communication, Broadcasting, Telecom Networking, IT Software, and Aviation. As a founder with hands-on experience as both an engineer to manager, I understand the technical needs and challenges of these industries, ensuring we find the right talent for your business.
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center relative">
@@ -155,81 +155,69 @@ export default function HRServices() {
           backgroundSize: '40px 40px',
         }}
       ></div>
-        <div className="container mx-auto text-center">
-          <h2 className="text-5xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
-            Our HR Services
-          </h2>
+      <div className="container mx-auto text-center">
+  <h2 className="text-5xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
+    Our HR Services
+  </h2>
 
-          <div className="relative flex flex-col items-center space-y-16">
-            <div className="absolute w-1 h-full bg-gradient-to-b from-[#00aaff] to-[#0033ff] left-1/2 transform -translate-x-1/2"></div>
+  <div className="relative flex flex-col items-center space-y-16">
+    <div className="absolute w-1 h-full bg-gradient-to-b from-[#00aaff] to-[#0033ff] left-1/2 transform -translate-x-1/2"></div>
 
-            <div className="flex items-center space-x-8 group">
-              <svg className="w-12 h-12 group-hover:rotate-180 transition-transform duration-300" viewBox="0 0 100 100">
-              </svg>
-              <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-                <h3 className="text-2xl md:text-3xl font-semibold text-white">Responsive Website Design</h3>
-                <p className="text-gray-400 mt-4 max-w-md">We design websites optimized across all devices, ensuring an excellent user experience.</p>
-              </div>
-            </div>
+    <div className="flex items-center space-x-8 group">
+      <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
+      <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
+        <h3 className="text-2xl md:text-3xl font-semibold text-white">Talent Sourcing</h3>
+        <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
+          <li>Industry Expertise: Specializing in Satellite Communication, Broadcasting, Telecom Networking, IT Software, and more, using both traditional and modern sourcing methods.</li>
+          <li>Targeted Approach: Leverage deep industry knowledge to find candidates with the exact skills needed for your roles.</li>
+        </ul>
+      </div>
+    </div>
 
-            <div className="flex items-center space-x-8 group">
-              <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-                <h3 className="text-2xl md:text-3xl font-semibold text-white">E-commerce Solutions</h3>
-                <p className="text-gray-400 mt-4 max-w-md">Create secure, scalable, and customizable online stores to grow your business&apos;s online presence.</p>
-              </div>
-              <svg className="w-12 h-12 group-hover:rotate-180 transition-transform duration-300" viewBox="0 0 100 100"> 
-              </svg>
-            </div>
-            <div className="flex items-center space-x-8 group">
-              <svg className="w-12 h-12 group-hover:rotate-180 transition-transform duration-300" viewBox="0 0 100 100">
-            
-              </svg>
-              <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-                <h3 className="text-2xl md:text-3xl font-semibold text-white">Custom Web Applications</h3>
-                <p className="text-gray-400 mt-4 max-w-md">Develop tailored web applications built to meet your unique business needs.</p>
-              </div>
-            </div>
+        <div className="flex items-center space-x-8 group">
+          <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
+            <h3 className="text-2xl md:text-3xl font-semibold text-white">Screening & Shortlisting</h3>
+            <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
+              <li>Technical Screening: Ensuring candidates meet specific skill requirements.</li>
+              <li>Cultural Fit: Assessing technical skills and cultural alignment for seamless integration.</li>
+            </ul>
+          </div>
+          <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
+        </div>
+
+        <div className="flex items-center space-x-8 group">
+          <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
+          <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
+            <h3 className="text-2xl md:text-3xl font-semibold text-white">Recruitment & Selection</h3>
+            <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
+              <li>Full-Cycle Recruitment: From job posting to interviews and negotiations.</li>
+              <li>Custom Solutions: Tailored recruitment strategy for permanent or temporary staff.</li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section className="relative bg-black text-white py-24 px-8 md:px-16 overflow-hidden">
-        <div className="container mx-auto text-center relative z-0">
-          <h2 className="text-5xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
-            Innovative Solutions
-          </h2>
-        <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
-          Elevate your business with cutting-edge technology, streamlined processes, and strategic insights that help you achieve success in today&apos;s fast-evolving digital landscape.
-        </p>
-
-          <div className="relative flex flex-wrap justify-center gap-12">
-            <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-2">
-              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
-                Talent Acquisition
-              </h3>
-              <p className="text-gray-400 mb-6 group-hover:text-gray-200">
-                Leverage data-driven recruitment to find top-tier professionals that align with your business culture and goals.
-              </p>
+          <div className="flex items-center space-x-8 group">
+            <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
+              <h3 className="text-2xl md:text-3xl font-semibold text-white">Onboarding & Support</h3>
+              <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
+                <li>Smooth Onboarding: Supporting quick integration and productivity for new hires.</li>
+                <li>Retention Strategies: Assisting in employee retention to keep top talent long-term.</li>
+              </ul>
             </div>
-            <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-2">
-              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300 ease-in-out">
-                Payroll Management
-              </h3>
-              <p className="text-gray-400 mb-6 group-hover:text-gray-200">
-                Automate and simplify payroll processes for timely, accurate, and compliant payouts every time.
-              </p>
-            </div>
-            <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-3">
-              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-purple-500 transition-colors duration-300 ease-in-out">
-                Performance Monitoring
-              </h3>
-              <p className="text-gray-400 mb-6 group-hover:text-gray-200">
-                Get real-time insights into team performance, boost productivity, and optimize workflow with cutting-edge analytics.
-              </p>
-            </div>
+            <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
+          </div>
+        <div className="flex items-center space-x-8 group">
+          <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
+          <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
+            <h3 className="text-2xl md:text-3xl font-semibold text-white">Backup & Replacement</h3>
+            <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
+              <li>Quick Replacements: Fast options to minimize disruption if a hire doesn't work out.</li>
+              <li>Backup Support: Ensuring critical roles are covered with backup staff.</li>
+            </ul>
           </div>
         </div>
-      </section>
-
+      </div>
+    </div>
+     </section>
       <section className="relative bg-black text-white py-16 px-8 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-60 transform scale-105"></div>
         <div className="absolute inset-0 pointer-events-none">
@@ -264,55 +252,51 @@ export default function HRServices() {
           </a>
         </div>
       </section>
-     <section id="how-it-works" className="relative bg-gradient-to-b from-black via-dark-blue-900 to-black text-white py-10 sm:py-16 md:py-28 px-4 sm:px-6 md:px-8 overflow-hidden">
-      <div className="absolute top-0 left-0 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-br from-blue-900 to-dark-blue opacity-50 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-36 sm:w-48 h-36 sm:h-48 bg-gradient-to-br from-blue-500 to-light-blue opacity-40 rounded-full blur-3xl"></div>
+      <section className="relative bg-black text-white py-24 px-8 md:px-16 overflow-hidden">
+        <div className="container mx-auto text-center relative z-0">
+          <h2 className="text-5xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
+            Why Choose Us?
+          </h2>
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
+            We bring unparalleled expertise, tailored solutions, and a commitment to ongoing support, ensuring your team&apos;s success.
+          </p>
 
-      <div className="container mx-auto text-center relative">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-white tracking-wider uppercase">
-          How It Works
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 md:gap-16">
-          <div className="relative group p-6 sm:p-8 md:p-10 bg-gradient-to-r from-blue-900 to-gray-800 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl hover:bg-gradient-to-br from-cyan-700 to-indigo-800">
-            <div className="relative z-10">
-              <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 tracking-wide group-hover:text-yellow-300 transition duration-500">
-                Step 1: Consultation
+          <div className="relative flex flex-wrap justify-center gap-12">
+            <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-2">
+              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
+                Industry Expertise
               </h3>
-              <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
-                We deeply understand your business goals to craft the perfect solution.
+              <p className="text-gray-400 mb-6 group-hover:text-gray-200">
+                As a technical founder, I bring hands-on experience in the industries we serve, ensuring we find the right talent.
               </p>
             </div>
-          </div>
-          
-          <div className="relative group p-6 sm:p-8 md:p-10 bg-gradient-to-r from-blue-900 to-gray-800 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl hover:bg-gradient-to-br from-cyan-700 to-blue-600">
-            <div className="relative z-10">
-              <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 tracking-wide group-hover:text-green-400 transition duration-500">
-                Step 2: Design & Development
+            <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-2">
+              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300 ease-in-out">
+                Tailored Solutions
               </h3>
-              <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
-                Our team builds custom solutions uniquely tailored to your needs.
+              <p className="text-gray-400 mb-6 group-hover:text-gray-200">
+                We understand your unique needs and provide candidates with the skills and experience required for success.
               </p>
             </div>
-          </div>
-          
-          <div className="relative group p-6 sm:p-8 md:p-10 bg-gradient-to-r from-blue-900 to-gray-800 rounded-3xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl hover:bg-gradient-to-br from-cyan-700 to-indigo-800">
-            <div className="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-20 transition duration-500"></div>
-            <div className="relative z-10">
-              <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 tracking-wide group-hover:text-red-400 transition duration-500">
-                Step 3: Launch & Support
+            <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-3">
+              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-purple-500 transition-colors duration-300 ease-in-out">
+                Efficient Process
               </h3>
-              <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
-                We ensure a seamless launch and provide continuous support post-launch.
+              <p className="text-gray-400 mb-6 group-hover:text-gray-200">
+                Our streamlined approach saves you time and resources while ensuring top-quality hires.
+              </p>
+            </div>
+            <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-3">
+              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-blue-500 transition-colors duration-300 ease-in-out">
+                Ongoing Support
+              </h3>
+              <p className="text-gray-400 mb-6 group-hover:text-gray-200">
+                From recruitment to retention, we offer continuous support to ensure your team’s success.
               </p>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-blue-900 opacity-20 pointer-events-none"></div>
-    </section>
-
+      </section>
     <Footer />
    </>
   );

@@ -4,7 +4,7 @@ import WebDevelopmentExpertise from "@/components/Expertise/WebExp";
 import WebHero from "@/components/WebDev/Hero";
 import Footer from "@/components/Footer";
 export const metadata = {
-  title: "Website Development", // This will set the tab title
+  title: "Website Development", 
   description:
     "Get the best advice from our experts, including expert developers, designers, enthusiasts, and managers.", // You can add a meta description as well
 };
@@ -58,33 +58,46 @@ export default function WebsiteDevelopment() {
             </div>
           </div>
         </section>
-
         <section className="bg-black text-white py-20 px-8 relative overflow-hidden">
         <div className="container mx-auto text-center z-10 relative">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-10 bg-clip-text text-transparent bg-white leading-snug">
             Why Choose Us?
           </h2>
-          <ul className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6 md:mb-8 space-y-4 list-disc list-inside">
-            <li>
-              <strong>Customer-Centric Approach:</strong> We listen closely to your needs and focus on delivering a solution that fits your business. Our team collaborates with you to ensure that the end product aligns with your vision.
+          <ul className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6 md:mb-8 space-y-6 list-none">
+            <li className="flex items-start gap-4">
+              <span className="text-[#00aaff] font-bold text-xl">•</span>
+              <p className="pl-6 text-left">
+                <strong>Customer-Centric Approach:</strong> We listen closely to your needs and focus on delivering a solution that fits your business. Our team collaborates with you to ensure that the end product aligns with your vision.
+              </p>
             </li>
-            <li>
-              <strong>Cutting-Edge Technologies:</strong> We use the latest tools and technologies to build websites and applications that are secure, scalable, and future-ready.
+            <li className="flex items-start gap-4">
+              <span className="text-[#00aaff] font-bold text-xl">•</span>
+              <p className="pl-6 text-left">
+                <strong>Cutting-Edge Technologies:</strong> We use the latest tools and technologies to build websites and applications that are secure, scalable, and future-ready.
+              </p>
             </li>
-            <li>
-              <strong>Agile Development Process:</strong> Our agile methodology ensures faster delivery, with constant communication and adaptability to changes.
+            <li className="flex items-start gap-4">
+              <span className="text-[#00aaff] font-bold text-xl">•</span>
+              <p className="pl-6 text-left">
+                <strong>Agile Development Process:</strong> Our agile methodology ensures faster delivery, with constant communication and adaptability to changes.
+              </p>
             </li>
-            <li>
-              <strong>Ongoing Support:</strong> We don&apos;t just deliver the project and walk away. Our team provides comprehensive support and training, ensuring that you&apos;re comfortable with the final product.
+            <li className="flex items-start gap-4">
+              <span className="text-[#00aaff] font-bold text-xl">•</span>
+              <p className="pl-6 text-left">
+                <strong>Ongoing Support:</strong> We don&apos;t just deliver the project and walk away. Our team provides comprehensive support and training, ensuring that you&apos;re comfortable with the final product.
+              </p>
             </li>
-            <li>
-              <strong>Expert Team:</strong> Our in-house team is made up of skilled developers, designers, and IT consultants with years of experience in the industry.
+            <li className="flex items-start gap-4">
+              <span className="text-[#00aaff] font-bold text-xl">•</span>
+              <p className="pl-6 text-left">
+                <strong>Expert Team:</strong> Our in-house team is made up of skilled developers, designers, and IT consultants with years of experience in the industry.
+              </p>
             </li>
           </ul>
         </div>
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-50 z-0"></div>
-        </section>
-
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-50 z-0"></div>
+      </section>
           <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 px-8 md:py-24 md:px-16">
           <div className="container mx-auto flex flex-col md:flex-row items-start gap-12">
             <aside className="bg-black p-6 w-full md:w-1/3 lg:w-1/4 border border-gray-700 rounded-lg shadow-lg transition-colors duration-300">
@@ -111,8 +124,6 @@ export default function WebsiteDevelopment() {
                 ))}
               </ul>
             </aside>
-
-            {/* Right: Content Section */}
             <div className="flex-1">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
                 Web Design & Development
@@ -142,10 +153,8 @@ export default function WebsiteDevelopment() {
         </section>
 
       <WebDevelopmentExpertise />
-
       <PricingPlans />
       <WebsiteContactUs />
-
      <Footer />
     </>
   );
