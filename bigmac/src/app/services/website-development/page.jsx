@@ -18,7 +18,7 @@ export default function WebsiteDevelopment() {
             Web Development & Design
             </h2>
             <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-12 md:mb-16 text-center">
-              Discover some of the transformative solutions we've developed for businesses worldwide.
+              Discover some of the transformative solutions we&apos;ve developed for businesses worldwide.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="relative group p-8 md:p-10 bg-gradient-to-b from-gray-800 to-black rounded-2xl shadow-xl border border-gray-700 overflow-hidden">
