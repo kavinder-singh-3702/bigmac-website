@@ -210,7 +210,7 @@ export default function HRServices() {
           <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
             <h3 className="text-2xl md:text-3xl font-semibold text-white">Backup & Replacement</h3>
             <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
-              <li>Quick Replacements: Fast options to minimize disruption if a hire doesn't work out.</li>
+              <li>Quick Replacements: Fast options to minimize disruption if a hire doesn&apos;t work out.</li>
               <li>Backup Support: Ensuring critical roles are covered with backup staff.</li>
             </ul>
           </div>
