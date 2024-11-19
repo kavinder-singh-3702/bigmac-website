@@ -119,7 +119,7 @@ export default function Header() {
                     App Development
                   </Link>
                 </li> */}
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/data-analytics-bi"
                     target="_blank"
@@ -128,8 +128,8 @@ export default function Header() {
                   >
                     Data Analytics And BI
                   </Link>
-                </li>
-                <li className="py-1">
+                </li> */}
+                {/* <li className="py-1">
                   <Link
                     href="/services/server-cloud-management"
                     target="_blank"
@@ -138,7 +138,7 @@ export default function Header() {
                   >
                     Server & Cloud Management
                   </Link>
-                </li>
+                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/ui-ux-designt"
@@ -149,7 +149,7 @@ export default function Header() {
                     UI/UX Design
                   </Link>
                 </li>
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/it-support-maintenance"
                     target="_blank"
@@ -158,7 +158,7 @@ export default function Header() {
                   >
                     IT Support And Maintenance
                   </Link>
-                </li>
+                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/it-consulting"
@@ -169,7 +169,7 @@ export default function Header() {
                     IT Consulting And Strategy
                   </Link>
                 </li>
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/qa-testing"
                     target="_blank"
@@ -178,7 +178,7 @@ export default function Header() {
                   >
                     Quality Assurance And Testing
                   </Link>
-                </li>
+                </li> */}
               </ul>
             )}
           </li>
@@ -268,7 +268,7 @@ export default function Header() {
                     Website Development
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="/services/epc-project"
                     className="block text-gray-200 hover:text-blue-300"
@@ -277,7 +277,7 @@ export default function Header() {
                   >
                     EPC Project Work
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     href="/services/hr-services"
@@ -288,7 +288,7 @@ export default function Header() {
                     HR Services
                   </Link>
                 </li>
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/app-development"
                     target="_blank"
@@ -296,8 +296,8 @@ export default function Header() {
                   >
                     App Development
                   </Link>
-                </li>
-                <li className="py-1">
+                </li> */}
+                {/* <li className="py-1">
                   <Link
                     href="/services/data-analytics-bi"
                     target="_blank"
@@ -305,8 +305,8 @@ export default function Header() {
                   >
                     Data Analytics And BI
                   </Link>
-                </li>
-                <li className="py-1">
+                </li> */}
+                {/* <li className="py-1">
                   <Link
                     href="/services/server-cloud-management"
                     target="_blank"
@@ -314,7 +314,7 @@ export default function Header() {
                   >
                     Server & Cloud Management
                   </Link>
-                </li>
+                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/ui-ux-designt"
@@ -324,7 +324,7 @@ export default function Header() {
                     UI/UX Design
                   </Link>
                 </li>
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/it-support-maintenance"
                     target="_blank"
@@ -332,7 +332,7 @@ export default function Header() {
                   >
                     IT Support And Maintenance
                   </Link>
-                </li>
+                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/it-consulting"
@@ -342,7 +342,7 @@ export default function Header() {
                     IT Consulting And Strategy
                   </Link>
                 </li>
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/qa-testing"
                     target="_blank"
@@ -350,7 +350,7 @@ export default function Header() {
                   >
                     Quality Assurance And Testing
                   </Link>
-                </li>
+                </li> */}
               </ul>
             )}
           </li>
