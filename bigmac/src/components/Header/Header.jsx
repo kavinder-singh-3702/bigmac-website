@@ -141,12 +141,12 @@ export default function Header() {
                 </li> */}
                 <li className="py-1">
                   <Link
-                    href="/services/ui-ux-designt"
+                    href="/services/server-cloud-management"
                     target="_blank"
                     className="hover:text-blue-300"
                     onClick={handleLinkClick}
                   >
-                    UI/UX Design
+                    Server & Cloud Management
                   </Link>
                 </li>
                 {/* <li className="py-1">
@@ -161,12 +161,12 @@ export default function Header() {
                 </li> */}
                 <li className="py-1">
                   <Link
-                    href="/services/it-consulting"
+                    href="/services/it-support-maintenance"
                     target="_blank"
                     className="hover:text-blue-300"
                     onClick={handleLinkClick}
                   >
-                    IT Consulting And Strategy
+                    IT Support And Maintenance
                   </Link>
                 </li>
                 {/* <li className="py-1">
