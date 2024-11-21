@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 import Footer from "@/components/Footer";
+
 export default function HRServices() {
   const controls = useAnimation();
   useEffect(() => {
