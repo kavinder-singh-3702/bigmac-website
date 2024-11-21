@@ -12,41 +12,39 @@ export default function WebsiteDevelopment() {
   return (
     <>
       <WebHero />
-      <section className="relative bg-black text-white py-20 md:py-28 px-8 md:px-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black opacity-95"></div>
-        <div className="container mx-auto relative z-10 text-center">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-10 md:mb-14">
-            Web Development & Design
-          </h2>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-16 md:mb-20 leading-relaxed">
-            Discover transformative solutions crafted to drive growth and engage customers worldwide. Let us help you stand out in the digital space.
-          </p>
+      <section className="relative bg-black text-white py-16 md:py-24 px-8 md:px-16 overflow-hidden">
+  <div className="absolute inset-0 bg-black opacity-95"></div>
+  <div className="container mx-auto relative z-10 text-center">
+    <h2 className="text-5xl md:text-6xl font-extrabold text-transparent bg-black text-white mb-10 md:mb-10">
+      Web Development & Design
+    </h2>
+    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 md:mb-6 leading-relaxed">
+      Discover transformative solutions crafted to drive growth and engage customers worldwide. Let us help you stand out in the digital space.
+    </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Description 1 */}
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 mb-8">
-           
-              </div>
-              <p className="text-lg text-gray-300 leading-loose max-w-xl">
-                At Bigmac, we create high-performance websites tailored to drive business growth. From static showcases to dynamic websites, we deliver visually stunning, functional, and scalable solutions that match your unique needs.
-              </p>
-            </div>
-
-            {/* Description 2 */}
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 mb-8">
-              
-              </div>
-              <p className="text-lg text-gray-300 leading-loose max-w-xl">
-                Using cutting-edge technologies, we build responsive and user-friendly websites for businesses of all sizes. From simple brochures to complex applications, we help you shine online.
-              </p>
-            </div>
-          </div>
+    <div className="grid grid-cols-1 gap-4"> {/* Use grid-cols-1 to stack items vertically */}
+      {/* Description 1 */}
+      <div className="flex flex-col items-center">
+        <div className="w-16 h-4 mb-6">
+          {/* Add your icon or image here */}
         </div>
-          <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-r from-green-400 to-blue-500 rounded-full opacity-20 blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full opacity-20 blur-3xl"></div>
-        </section>
+        <p className="text-lg text-gray-300 leading-loose max-w-xl">
+          At Bigmac, we create high-performance websites tailored to drive business growth. From static showcases to dynamic websites, we deliver visually stunning, functional, and scalable solutions that match your unique needs.
+        </p>
+      </div>
+
+      {/* Description 2 */}
+      <div className="flex flex-col items-center">
+        <div className="w-16 h-4 mb-6">
+          {/* Add your icon or image here */}
+        </div>
+        <p className="text-lg text-gray-300 leading-loose max-w-xl">
+          Using cutting-edge technologies, we build responsive and user-friendly websites for businesses of all sizes. From simple brochures to complex applications, we help you shine online.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 px-8 md:py-24 md:px-16">
           <div className="container mx-auto flex flex-col md:flex-row items-start gap-12">
