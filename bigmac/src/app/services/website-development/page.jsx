@@ -14,91 +14,143 @@ export default function WebsiteDevelopment() {
       <WebHero />
       <section className="relative bg-black text-white py-16 md:py-24 px-8 md:px-16 overflow-hidden">
   <div className="absolute inset-0 bg-black opacity-95"></div>
-  <div className="container mx-auto relative z-10 text-center">
-    <h2 className="text-5xl md:text-6xl font-extrabold text-transparent bg-black text-white mb-10 md:mb-10">
+  <div className="container mx-auto relative z-10 max-w-7xl">
+    <h2 className="text-5xl md:text-6xl font-extrabold bg-black bg-clip-text text-white text-center mb-10">
       Web Development & Design
     </h2>
-    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 md:mb-6 leading-relaxed">
-      Discover transformative solutions crafted to drive growth and engage customers worldwide. Let us help you stand out in the digital space.
+    <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto text-center mb-16 leading-relaxed">
+      Elevate your digital presence with cutting-edge web development and design. Our solutions deliver innovation, engagement, and growth, tailored to make your brand stand out in a competitive landscape.
     </p>
-
-    <div className="grid grid-cols-1 gap-4"> {/* Use grid-cols-1 to stack items vertically */}
-      {/* Description 1 */}
-      <div className="flex flex-col items-center">
-        <div className="w-16 h-4 mb-6">
-          {/* Add your icon or image here */}
-        </div>
-        <p className="text-lg text-gray-300 leading-loose max-w-xl">
-          At Bigmac, we create high-performance websites tailored to drive business growth. From static showcases to dynamic websites, we deliver visually stunning, functional, and scalable solutions that match your unique needs.
-        </p>
+    <div className="flex flex-col md:flex-row items-center justify-center mb-16">
+      <div className="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mb-8 md:mb-0 md:mr-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          className="text-indigo-500 w-full h-full"
+          fill="none"
+        >
+          <rect x="8" y="8" width="48" height="48" rx="8" className="fill-current" />
+          <path
+            d="M20 20h24v24H20z"
+            className="fill-black"
+          />
+          <path
+            d="M32 16v32M16 32h32"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </div>
-
-      {/* Description 2 */}
-      <div className="flex flex-col items-center">
-        <div className="w-16 h-4 mb-6">
-          {/* Add your icon or image here */}
-        </div>
-        <p className="text-lg text-gray-300 leading-loose max-w-xl">
-          Using cutting-edge technologies, we build responsive and user-friendly websites for businesses of all sizes. From simple brochures to complex applications, we help you shine online.
+      <div className="text-center md:text-left max-w-xl">
+      <h3 className="text-2xl font-semibold mb-4">High-Performance Websites</h3>
+        <p className="text-lg text-gray-300 leading-loose">
+          Crafting high-performance, visually stunning, and functional websites that drive growth. From minimalistic designs to dynamic, interactive interfaces, we cater to your unique vision.
         </p>
       </div>
     </div>
+    <div className="flex flex-col md:flex-row-reverse items-center justify-center">
+    <div className="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 mb-8 md:mb-0 md:ml-8 hidden md:block">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350">
+        <rect x="0" y="0" width="400" height="350" fill="#1E2A47" />
+        <rect x="5" y="5" width="90" height="340" fill="#334866" rx="10" />
+        <text x="15" y="25" fill="#FFF" font-size="12" font-weight="bold">MENU</text>
+        <circle cx="15" cy="50" r="5" fill="#4CAF50" />
+        <text x="30" y="53" fill="#FFF" font-size="8">Dashboard</text>
+        <circle cx="15" cy="80" r="5" fill="#FF9800" />
+        <text x="30" y="83" fill="#FFF" font-size="8">Projects</text>
+        <circle cx="15" cy="110" r="5" fill="#03A9F4" />
+        <text x="30" y="113" fill="#FFF" font-size="8">Settings</text>
+        <rect x="10" y="310" width="60" height="15" fill="#4CAF50" rx="5" />
+        <text x="20" y="323" fill="#FFF" font-size="8" font-weight="bold">Logout</text>
+
+        <rect x="100" y="10" width="280" height="100" fill="#4678D6" rx="10" />
+        <text x="110" y="25" fill="#FFF" font-size="12" font-weight="bold">UI/UX Dashboard</text>
+        <rect x="110" y="35" width="260" height="60" fill="#FFF" rx="8" />
+        <text x="120" y="50" fill="#2A3B6A" font-size="10" font-weight="bold">Design Progress</text>
+        <rect x="120" y="60" width="180" height="8" fill="#4CAF50" rx="4" />
+        <rect x="120" y="75" width="160" height="8" fill="#03A9F4" rx="4" />
+        <rect x="120" y="90" width="140" height="8" fill="#FF9800" rx="4" />
+
+        <rect x="100" y="120" width="280" height="100" fill="#2A3B6A" rx="10" />
+        <text x="110" y="135" fill="#FFF" font-size="12" font-weight="bold">Team Activity</text>
+        <circle cx="120" cy="160" r="8" fill="#FBC02D" />
+        <text x="135" y="163" fill="#FFF" font-size="8">Alex</text>
+        <circle cx="120" cy="185" r="8" fill="#03A9F4" />
+        <text x="135" y="188" fill="#FFF" font-size="8">Jordan</text>
+        <circle cx="120" cy="210" r="8" fill="#FF9800" />
+        <text x="135" y="213" fill="#FFF" font-size="8">Taylor</text>
+
+        <rect x="350" y="10" width="40" height="15" fill="#FF9800" rx="5" />
+        <text x="355" y="22" fill="#FFF" font-size="8">Alerts</text>
+        <rect x="350" y="30" width="40" height="15" fill="#4CAF50" rx="5" />
+        <text x="355" y="42" fill="#FFF" font-size="8">Messages</text>
+      </svg>
+    </div>
+    <div className="text-center md:text-left max-w-xl">
+      <h3 className="text-2xl font-semibold mb-4">Responsive & Seamless</h3>
+      <p className="text-lg text-gray-300 leading-loose">
+        Leveraging cutting-edge technologies, we deliver responsive, user-friendly websites that adapt to all devices, ensuring seamless experiences and optimized performance.
+      </p>
+    </div>
+  </div>
   </div>
 </section>
+    <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 px-8 md:py-24 md:px-16">
+      <div className="container mx-auto flex flex-col md:flex-row items-start gap-12">
+        <aside className="bg-black p-6 w-full md:w-1/3 lg:w-1/4 border border-gray-700 rounded-lg shadow-lg transition-colors duration-300">
+          <h2 className="text-lg font-bold mb-4 text-white hover:text-blue-400">
+            Additional Services We Provide
+          </h2>
+          <ul className="space-y-4">
+            {[
+              { name: "Web Development", path: "/services/website-development" },
+              { name: "App Development", path: "/services/website-development" },
+              { name: "Server & Cloud Management", path: "/services/server-cloud-management" },
+              { name: "HR Services", path: "/services/hr-services" },
+              { name: "Quality Assurance and Testing", path: "/services/server-cloud-management" },
+              { name: "IT Support and Maintenance", path: "/services/it-support-maintenancet" },
+              { name: "IT Consulting and Strategy", path: "/services/it-support-maintenance" },
+              { name: "UX/UI Design", path: "/services/website-development" },
+            ].map((service, index) => (
+              <li
+                key={index}
+                className="text-gray-400 hover:text-blue-400 hover:bg-gray-800 rounded-lg p-2 transition duration-300"
+              >
+                <a href={service.path}>{service.name}</a>
+              </li>
+            ))}
+          </ul>
+        </aside>
+        <div className="flex-1">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
+            Web Design & Development
+          </h2>
+          <p className="text-gray-300 leading-relaxed mb-6">
+            We build custom websites and web applications that not only look
+            stunning but also perform seamlessly. Whether you need a static
+            website to showcase your brand, a dynamic website with advanced
+            functionality, or a custom web application, we&apos;ve got you covered.
+            Our websites are designed to be:
+          </p>
+          <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
+            <li>Responsive: Ensuring a great experience on desktops, tablets, and mobiles.</li>
+            <li>SEO Optimized: Helping you rank higher and attract more visitors.</li>
+            <li>User-Friendly: Focused on providing easy navigation and engagement.</li>
+            <li>Scalable & Secure: Built to grow with your business while keeping user data safe.</li>
+          </ul>
+          <h3 className="text-2xl font-semibold text-white mb-4">Key Web Services We Offer</h3>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li>Static Websites: Simple, professional sites to get your business online quickly.</li>
+            <li>Dynamic Websites: Interactive sites with custom features and content management.</li>
+            <li>Custom Web Applications: Tailored solutions for e-commerce, booking systems, portals, and more.</li>
+            <li>E-Commerce Websites: Secure, conversion-optimized online stores.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 px-8 md:py-24 md:px-16">
-          <div className="container mx-auto flex flex-col md:flex-row items-start gap-12">
-            <aside className="bg-black p-6 w-full md:w-1/3 lg:w-1/4 border border-gray-700 rounded-lg shadow-lg transition-colors duration-300">
-              <h2 className="text-lg font-bold mb-4 text-white hover:text-blue-400">
-              Additional Services We Provide
-              </h2>
-              <ul className="space-y-4">
-                {[
-                  "Web Development",
-                  "App Development",
-                  "Server & Cloud Management",
-                  "Data Analytics and BI",
-                  "Quality Assurance and Testing",
-                  "IT Support and Maintenance",
-                  "IT Consulting and Strategy",
-                  "UX/UI Design",
-                ].map((service, index) => (
-                  <li
-                    key={index}
-                    className="text-gray-400 hover:text-blue-400 hover:bg-gray-800 rounded-lg p-2 transition duration-300"
-                  >
-                    <a href="#">{service}</a>
-                  </li>
-                ))}
-              </ul>
-            </aside>
-            <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
-                Web Design & Development
-              </h2>
-              <p className="text-gray-300 leading-relaxed mb-6">
-                We build custom websites and web applications that not only look
-                stunning but also perform seamlessly. Whether you need a static
-                website to showcase your brand, a dynamic website with advanced
-                functionality, or a custom web application, we&apos;ve got you covered.
-                Our websites are designed to be:
-              </p>
-              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
-                <li>Responsive: Ensuring a great experience on desktops, tablets, and mobiles.</li>
-                <li>SEO Optimized: Helping you rank higher and attract more visitors.</li>
-                <li>User-Friendly: Focused on providing easy navigation and engagement.</li>
-                <li>Scalable & Secure: Built to grow with your business while keeping user data safe.</li>
-              </ul>
-              <h3 className="text-2xl font-semibold text-white mb-4">Key Web Services We Offer</h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>Static Websites: Simple, professional sites to get your business online quickly.</li>
-                <li>Dynamic Websites: Interactive sites with custom features and content management.</li>
-                <li>Custom Web Applications: Tailored solutions for e-commerce, booking systems, portals, and more.</li>
-                <li>E-Commerce Websites: Secure, conversion-optimized online stores.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
         <section className="bg-black text-white py-20 px-8 relative overflow-hidden">
         <div className="container mx-auto text-center z-10 relative">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-10 bg-clip-text text-transparent bg-white leading-snug">
