@@ -1,6 +1,7 @@
 import React from "react";
 import IT from "@/components/Services/IT/IT";
 import HeroSection from "@/components/Services/IT/HeroSection";
+import Footer from "@/components/Footer";
 export const metadata = {
   title: "IT Support And Maintenance", 
   description:
@@ -11,6 +12,7 @@ export default function page() {
     <div>
     <HeroSection/>
     <IT />
+    <Footer/>
     </div>
   );
 }

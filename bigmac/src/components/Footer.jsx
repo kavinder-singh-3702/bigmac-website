@@ -23,17 +23,17 @@ export default function Footer() {
             <h4 className="text-xl font-semibold text-gray-200">Services</h4>
             <ul className="space-y-3 text-gray-400">
               <li><a href="/services/website-development" className="hover:text-[#00aaff] transition-colors duration-300">Web Development</a></li>
-              <li><a href="/services/epc-project" className="hover:text-[#00aaff] transition-colors duration-300">EPC Project Work</a></li>
               <li><a href="/services/hr-services" className="hover:text-[#00aaff] transition-colors duration-300">HR Services</a></li>
+              <li><a href="/services/server-cloud-management" className="hover:text-[#00aaff] transition-colors duration-300">Server & Cloud Management</a></li>
               <li><a href="/services/it-consulting" className="hover:text-[#00aaff] transition-colors duration-300">IT Consulting And Strategy</a></li>
             </ul>
           </div>
           <div className="space-y-4">
             <h4 className="text-xl font-semibold text-gray-200">More Services</h4>
             <ul className="space-y-3 text-gray-400">
-              <li><a href="/services/app-development" className="hover:text-[#00aaff] transition-colors duration-300">App Development</a></li>
+              <li><a href="/services/website-development" className="hover:text-[#00aaff] transition-colors duration-300">App Development</a></li>
               <li><a href="/services/server-cloud-management" className="hover:text-[#00aaff] transition-colors duration-300">Server & Cloud Management</a></li>
-              <li><a href="/services/ui-ux-design" className="hover:text-[#00aaff] transition-colors duration-300">UI/UX Design</a></li>
+              <li><a href="/services/website-development" className="hover:text-[#00aaff] transition-colors duration-300">UI/UX Design</a></li>
               <li><a href="/services/it-support-maintenance" className="hover:text-[#00aaff] transition-colors duration-300">IT Support And Maintenance</a></li>
             </ul>
           </div>
