@@ -275,16 +275,6 @@ export default function Header() {
                     Website Development
                   </Link>
                 </li>
-                {/* <li>
-                  <Link
-                    href="/services/epc-project"
-                    className="block text-gray-200 hover:text-blue-300"
-                    target="_blank"
-                    onClick={handleLinkClick}
-                  >
-                    EPC Project Work
-                  </Link>
-                </li> */}
                 <li>
                   <Link
                     href="/services/hr-services"
@@ -295,43 +285,8 @@ export default function Header() {
                     HR Services
                   </Link>
                 </li>
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/app-development"
-                    target="_blank"
-                    className="block text-gray-200 hover:text-blue-300"
-                  >
-                    App Development
-                  </Link>
-                </li> */}
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/data-analytics-bi"
-                    target="_blank"
-                    className="block text-gray-200 hover:text-blue-300"
-                  >
-                    Data Analytics And BI
-                  </Link>
-                </li> */}
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/server-cloud-management"
-                    target="_blank"
-                    className="block text-gray-200 hover:text-blue-300"
-                  >
-                    Server & Cloud Management
-                  </Link>
-                </li> */}
+                
                 <li className="py-1">
-                  <Link
-                    href="/services/ui-ux-designt"
-                    target="_blank"
-                    className="block text-gray-200 hover:text-blue-300"
-                  >
-                    UI/UX Design
-                  </Link>
-                </li>
-                {/* <li className="py-1">
                   <Link
                     href="/services/it-support-maintenance"
                     target="_blank"
@@ -339,25 +294,16 @@ export default function Header() {
                   >
                     IT Support And Maintenance
                   </Link>
-                </li> */}
+                </li>
                 <li className="py-1">
                   <Link
-                    href="/services/it-consulting"
+                    href="/services/server-cloud-management"
                     target="_blank"
                     className="block text-gray-200 hover:text-blue-300"
                   >
-                    IT Consulting And Strategy
+                    Server & Cloud Management
                   </Link>
                 </li>
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/qa-testing"
-                    target="_blank"
-                    className="block text-gray-200 hover:text-blue-300"
-                  >
-                    Quality Assurance And Testing
-                  </Link>
-                </li> */}
               </ul>
             )}
           </li>
