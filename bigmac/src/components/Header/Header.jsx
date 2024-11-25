@@ -36,11 +36,6 @@ export default function Header() {
         BIGMAC
       </span>
     </Link>
-    {/* // <header className="bg-black shadow-md fixed w-full z-50 top-0">
-    //   <nav className="container mx-auto p-6 lg:pl-20 flex justify-between items-center">
-    //     <Link href="/" className="text-xl font-semibold flex items-center">
-    //     <span className="text-white ml-4 sm:ml-20 text-2xl">BIGMAC</span>
-    //     </Link> */}
         <button
           className="block lg:hidden text-gray-300"
           onClick={toggleMenu}
@@ -116,36 +111,6 @@ export default function Header() {
                     HR Services
                   </Link>
                 </li>
-               {/* <li className="py-1">
-                  <Link
-                    href="/services/app-development"
-                    target="_blank"
-                    className="hover:text-blue-300"
-                    onClick={handleLinkClick}
-                  >
-                    App Development
-                  </Link>
-                </li> */}
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/data-analytics-bi"
-                    target="_blank"
-                    className="hover:text-blue-300"
-                    onClick={handleLinkClick}
-                  >
-                    Data Analytics And BI
-                  </Link>
-                </li> */}
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/server-cloud-management"
-                    target="_blank"
-                    className="hover:text-blue-300"
-                    onClick={handleLinkClick}
-                  >
-                    Server & Cloud Management
-                  </Link>
-                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/server-cloud-management"
@@ -156,16 +121,6 @@ export default function Header() {
                     Server & Cloud Management
                   </Link>
                 </li>
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/it-support-maintenance"
-                    target="_blank"
-                    className="hover:text-blue-300"
-                    onClick={handleLinkClick}
-                  >
-                    IT Support And Maintenance
-                  </Link>
-                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/it-support-maintenance"
@@ -176,16 +131,7 @@ export default function Header() {
                     IT Support And Maintenance
                   </Link>
                 </li>
-                {/* <li className="py-1">
-                  <Link
-                    href="/services/qa-testing"
-                    target="_blank"
-                    className="hover:text-blue-300"
-                    onClick={handleLinkClick}
-                  >
-                    Quality Assurance And Testing
-                  </Link>
-                </li> */}
+
               </ul>
             )}
           </li>

@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="px-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
             <div>
-              <h1 className="text-2xl font-normal text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
+              <h1 className="text-xl font-normal text-white sm:text-xl md:text-2xl lg:text-4xl xl:text-4xl">
                 Innovating the Future of Communication, Technology, and Web Development
               </h1>
               <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8 md:text-xl">
