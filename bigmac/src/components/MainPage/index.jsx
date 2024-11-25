@@ -1,3 +1,4 @@
+
 "use client";
 import Link from "next/link";
 import { useState } from "react";
@@ -11,11 +12,11 @@ export default function HeroSection() {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
             <div>
-              <h1 className="text-3xl font-normal text-white sm:text-3xl lg:text-5xl xl:text-5xl">
-              Innovating the Future of Communication, Technology, and Web Development
+              <h1 className="text-2xl font-normal text-white sm:text-3xl lg:text-5xl xl:text-5xl">
+                Innovating the Future of Communication, Technology, and Web Development
               </h1>
               <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">
-              Let&apos;s Build the Future Together
+                Let&apos;s Build the Future Together
               </p>
               <form className="relative mt-8 sm:mt-12">
                 <div className="relative">
@@ -66,16 +67,8 @@ export default function HeroSection() {
                             y2="6.90161"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop
-                              offset="0%"
-                              style={{ stopColor: "#00bcd4" }}
-                            />{" "}
-                            {/* Cyan */}
-                            <stop
-                              offset="100%"
-                              style={{ stopColor: "#9c27b0" }}
-                            />{" "}
-                            {/* Purple */}
+                            <stop offset="0%" style={{ stopColor: "#00bcd4" }} />
+                            <stop offset="100%" style={{ stopColor: "#9c27b0" }} />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -92,7 +85,8 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="relative">
+            {/* Hide this section on small screens */}
+            <div className="relative hidden lg:block">
               <div className="absolute inset-0">
                 <svg
                   className="blur-3xl filter opacity-70"
