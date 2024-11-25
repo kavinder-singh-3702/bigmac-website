@@ -30,10 +30,17 @@ export default function Header() {
 
   return (
     <header className="bg-black shadow-md fixed w-full z-50 top-0">
-      <nav className="container mx-auto p-6 lg:pl-20 flex justify-between items-center">
-        <Link href="/" className="text-xl font-semibold flex items-center">
-        <span className="text-white ml-4 sm:ml-20 text-2xl">BIGMAC</span>
-        </Link>
+  <nav className="container mx-auto p-6 lg:pl-20 flex justify-between items-center">
+    <Link href="/" className="text-xl font-semibold flex items-center">
+      <span className="text-white text-lg sm:text-xl lg:text-2xl ml-2 sm:ml-6 lg:ml-20">
+        BIGMAC
+      </span>
+    </Link>
+    {/* // <header className="bg-black shadow-md fixed w-full z-50 top-0">
+    //   <nav className="container mx-auto p-6 lg:pl-20 flex justify-between items-center">
+    //     <Link href="/" className="text-xl font-semibold flex items-center">
+    //     <span className="text-white ml-4 sm:ml-20 text-2xl">BIGMAC</span>
+    //     </Link> */}
         <button
           className="block lg:hidden text-gray-300"
           onClick={toggleMenu}

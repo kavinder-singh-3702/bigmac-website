@@ -1,4 +1,3 @@
-
 "use client";
 import Link from "next/link";
 import { useState } from "react";
@@ -9,13 +8,13 @@ export default function HeroSection() {
   return (
     <div>
       <section className="relative py-12 bg-black sm:pb-16 lg:pb-20 xl:pb-24">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="px-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 gap-x-16">
             <div>
-              <h1 className="text-2xl font-normal text-white sm:text-3xl lg:text-5xl xl:text-5xl">
+              <h1 className="text-2xl font-normal text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
                 Innovating the Future of Communication, Technology, and Web Development
               </h1>
-              <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8">
+              <p className="mt-4 text-lg font-normal text-gray-400 sm:mt-8 md:text-xl">
                 Let&apos;s Build the Future Together
               </p>
               <form className="relative mt-8 sm:mt-12">
@@ -27,21 +26,21 @@ export default function HeroSection() {
                       disabled
                       type="email"
                       placeholder="Try Java Developer, React Dev etc."
-                      className="block w-full py-4 pr-6 text-white placeholder-gray-500 bg-black border border-transparent rounded-full pl-14 sm:py-5 focus:border-transparent focus:ring-0"
+                      className="block w-full py-4 pr-6 text-white placeholder-gray-500 bg-black border border-transparent rounded-full pl-14 sm:py-5 md:py-4 focus:border-transparent focus:ring-0"
                     />
                   </div>
                 </div>
                 <div className="sm:absolute flex sm:right-1.5 sm:inset-y-1.5 mt-4 sm:mt-0">
                   <Link
                     href="/services/website-development"
-                    className="inline-flex items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase bg-white rounded-full sm:w-auto sm:py-3 hover:opacity-90"
+                    className="inline-flex items-center justify-center w-full px-5 py-5 text-sm font-semibold tracking-widest text-black uppercase bg-white rounded-full sm:w-auto sm:py-3 md:py-4 hover:opacity-90"
                   >
                     Contact Us Today!
                   </Link>
                 </div>
               </form>
               <div className="mt-8 sm:mt-12">
-                <p className="text-lg font-normal text-white">
+                <p className="text-lg font-normal text-white md:text-xl">
                   Trusted by 50k+ users
                 </p>
                 <div className="flex items-center mt-3">
@@ -75,18 +74,16 @@ export default function HeroSection() {
                     ))}
                   </div>
 
-                  <span className="ml-2 text-base font-normal text-white">
+                  <span className="ml-2 text-base font-normal text-white md:text-lg">
                     4.1/5
                   </span>
-                  <span className="ml-1 text-base font-normal text-gray-500">
+                  <span className="ml-1 text-base font-normal text-gray-500 md:text-lg">
                     (14k Reviews)
                   </span>
                 </div>
               </div>
             </div>
-
-            {/* Hide this section on small screens */}
-            <div className="relative hidden lg:block">
+            <div className="relative hidden md:hidden lg:block">
               <div className="absolute inset-0">
                 <svg
                   className="blur-3xl filter opacity-70"
