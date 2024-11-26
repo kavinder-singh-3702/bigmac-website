@@ -38,7 +38,7 @@ const WebDevelopmentExpertise = () => {
               className="block bg-black p-6 rounded-xl shadow-lg border border-gray-700 transform transition-transform duration-300 relative group"
             >
               <div className="absolute inset-0 opacity-30 group-hover:opacity-50 bg-gradient-to-r from-black to-blue-900 rounded-xl blur-md transition-all duration-500"></div>
-              <h3 className="text-3xl font-semibold mb-4 relative text-white z-10">
+              <h3 className="text-2xl font-semibold mb-4 relative text-white z-10">
                 {category.title}
               </h3>
               <p className="text-md text-gray-300 relative z-10">
