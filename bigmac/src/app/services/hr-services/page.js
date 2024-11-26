@@ -29,7 +29,7 @@ export default function HRServices() {
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center relative">
-            <svg className="w-[450px] h-[450px] relative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+            <svg className="hidden sm:block w-[450px] h-[450px] relative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
               <defs>
                 <radialGradient id="centralGradient" cx="50%" cy="50%" r="50%">
                   <stop offset="0%" style={{ stopColor: "#00ccff", stopOpacity: 0.9 }} />
