@@ -3,28 +3,36 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const router = useRouter();
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const handleLinkClick = () => {
     setIsMenuOpen(false);
     setIsDropdownOpen(false); 
   };
+  
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    const headerHeight = document.querySelector("header").offsetHeight;
-
-    if (section) {
-      const sectionPosition = section.offsetTop - headerHeight;
-      window.scrollTo({
-        top: sectionPosition,
-        behavior: "smooth",
-      });
+    if (router.pathname === "/") {
+      const section = document.getElementById(sectionId);
+      const headerHeight = document.querySelector("header").offsetHeight;
+  
+      if (section) {
+        // Calculate the scroll position to align the section's top edge below the header
+        const sectionPosition = section.offsetTop - headerHeight;
+  
+        window.scrollTo({
+          top: sectionPosition >= 0 ? sectionPosition : 0, // Prevent negative scroll positions
+          behavior: "smooth",
+        });
+      }
+    } else {
+      // Redirect to the home page and target the section
+      router.push(`/#${sectionId}`);
     }
   };
 
@@ -111,7 +119,7 @@ export default function Header() {
                     HR Services
                   </Link>
                 </li>
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/server-cloud-management"
                     target="_blank"
@@ -120,7 +128,7 @@ export default function Header() {
                   >
                     Server & Cloud Management
                   </Link>
-                </li>
+                </li> */}
                 <li className="py-1">
                   <Link
                     href="/services/it-support-maintenance"
@@ -155,7 +163,7 @@ export default function Header() {
           </li>
           <li>
           <Link
-              href="/services/website-development"
+              href="/services/website-development/contactUs"
               className="text-gray-200 hover:text-blue-300 text-lg relative group"
             >
               Enquiry
@@ -241,7 +249,7 @@ export default function Header() {
                     IT Support And Maintenance
                   </Link>
                 </li>
-                <li className="py-1">
+                {/* <li className="py-1">
                   <Link
                     href="/services/server-cloud-management"
                     target="_blank"
@@ -249,7 +257,7 @@ export default function Header() {
                   >
                     Server & Cloud Management
                   </Link>
-                </li>
+                </li> */}
               </ul>
             )}
           </li>
@@ -266,7 +274,17 @@ export default function Header() {
               About
             </button>
           </li> 
-       
+          <li className="py-2">
+            <button
+              onClick={() => {
+                scrollToSection("portfolio");
+                handleLinkClick();
+              }}
+              className="block w-full text-gray-200 text-lg hover:text-blue-300"
+            >
+              Portfolio
+            </button>
+          </li> 
           <li className="py-2">
             <button
               onClick={() => {

@@ -167,8 +167,8 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="relative py-12 px-6 sm:px-8 lg:px-24 bg-black">
-      <h1 id="contact" className="text-5xl mt-20 font-bold text-center my-10 mb-20">
+    <div id="contact" className="relative py-12 px-6 sm:px-8 lg:px-24 bg-black">
+      <h1 id="contact" className="text-4xl mt-20 font-bold text-center my-10 mb-20">
         <span className="text-white">Contact</span>{" "}
         <span className="text-[#00aaff]">US</span>
       </h1>

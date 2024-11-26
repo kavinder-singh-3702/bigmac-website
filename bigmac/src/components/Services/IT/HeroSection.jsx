@@ -3,7 +3,7 @@ export default function ServerCloudManagement() {
     <section className="py-16 bg-black">
       <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center gap-12">
         <div className="lg:w-1/2 text-center lg:text-left lg:pl-14">
-          <h2 className="text-5xl font-extrabold text-white leading-tight mb-6">
+          <h2 className="text-5xl font-bold text-white leading-tight mb-6">
             IT Support and Maintenance Solutions
           </h2>
           <p className="text-lg text-gray-300 mb-6">

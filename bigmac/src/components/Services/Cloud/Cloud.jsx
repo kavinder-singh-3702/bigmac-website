@@ -9,7 +9,7 @@ export default function AboutUs() {
       <div className="max-w-7xl mx-auto space-y-16">
         <section className="relative bg-black p-10 rounded-lg shadow-lg overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-black opacity-10"></div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 relative z-10">
+          <h2 className="text-4xl lg:text-4xl font-bold text-white mb-6 relative z-10">
             About Us
           </h2>
           <p className="text-gray-400 leading-relaxed text-lg relative z-10">
@@ -22,7 +22,7 @@ export default function AboutUs() {
         </section>
         <section className="relative bg-black p-10 rounded-lg shadow-lg overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black via-blue-900 to-black opacity-10"></div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-10 relative z-10">
+          <h2 className="text-4xl lg:text-4xl font-bold text-white mb-10 relative z-10">
             Why Choose Us?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">

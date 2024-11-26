@@ -21,10 +21,10 @@ export default function HRServices() {
         </div>
         <div className="relative flex flex-col md:flex-row items-center justify-between w-full h-full px-4 md:px-12 lg:px-24 space-y-10 md:space-y-0">
           <div className="md:w-1/2 space-y-6 text-center md:text-left transition-transform transform duration-700 ease-in-out">
-            <h1 className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white to-[#00aaff] leading-tight transition duration-500 ease-in-out drop-shadow-lg">
+            <h1 className="text-4xl sm:text-4xl font-bold bg-clip-text text-transparent bg-white leading-tight transition duration-500 ease-in-out drop-shadow-lg">
             Specialized HR Services for Technical Industries
             </h1>
-            <p className="text-lg md:text-2xl max-w-2xl mx-auto md:mx-0 text-gray-300 leading-relaxed tracking-wide hover:text-white transition-colors duration-300 ease-in">
+            <p className="text-md md:text-xl font-normal max-w-2xl mx-auto md:mx-0 text-gray-300 leading-relaxed tracking-wide transition-colors duration-300 ease-in">
             At BIGMAC, we provide expert recruitment services for industries like Satellite Communication, Broadcasting, Telecom Networking, IT Software, and Aviation. As a founder with hands-on experience as both an engineer to manager, I understand the technical needs and challenges of these industries, ensuring we find the right talent for your business.
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function HRServices() {
         }}
       ></div>
       <div className="container mx-auto text-center">
-  <h2 className="text-5xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
+  <h2 className="text-4xl md:text-4xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
     Our HR Services
   </h2>
 
@@ -167,7 +167,7 @@ export default function HRServices() {
     <div className="flex items-center space-x-8 group">
       <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
       <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-        <h3 className="text-2xl md:text-3xl font-semibold text-white">Talent Sourcing</h3>
+        <h3 className="text-xl md:text-2xl font-semibold text-white">Talent Sourcing</h3>
         <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
           <li>Industry Expertise: Specializing in Satellite Communication, Broadcasting, Telecom Networking, IT Software, and more, using both traditional and modern sourcing methods.</li>
           <li>Targeted Approach: Leverage deep industry knowledge to find candidates with the exact skills needed for your roles.</li>
@@ -177,7 +177,7 @@ export default function HRServices() {
 
         <div className="flex items-center space-x-8 group">
           <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-            <h3 className="text-2xl md:text-3xl font-semibold text-white">Screening & Shortlisting</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-white">Screening & Shortlisting</h3>
             <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
               <li>Technical Screening: Ensuring candidates meet specific skill requirements.</li>
               <li>Cultural Fit: Assessing technical skills and cultural alignment for seamless integration.</li>
@@ -189,7 +189,7 @@ export default function HRServices() {
         <div className="flex items-center space-x-8 group">
           <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
           <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-            <h3 className="text-2xl md:text-3xl font-semibold text-white">Recruitment & Selection</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-white">Recruitment & Selection</h3>
             <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
               <li>Full-Cycle Recruitment: From job posting to interviews and negotiations.</li>
               <li>Custom Solutions: Tailored recruitment strategy for permanent or temporary staff.</li>
@@ -198,7 +198,7 @@ export default function HRServices() {
         </div>
           <div className="flex items-center space-x-8 group">
             <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-              <h3 className="text-2xl md:text-3xl font-semibold text-white">Onboarding & Support</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-white">Onboarding & Support</h3>
               <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
                 <li>Smooth Onboarding: Supporting quick integration and productivity for new hires.</li>
                 <li>Retention Strategies: Assisting in employee retention to keep top talent long-term.</li>
@@ -209,7 +209,7 @@ export default function HRServices() {
         <div className="flex items-center space-x-8 group">
           <svg className="w-12 h-12 group-hover:rotate-105 transition-transform duration-300" viewBox="0 0 100 100"></svg>
           <div className="p-6 md:p-10 rounded-xl shadow-lg border-2 border-transparent bg-gradient-to-r from-gray-800 via-gray-900 to-black transition-transform transform hover:scale-105 hover:border-[#00aaff] hover:bg-opacity-90 backdrop-blur-md group-hover:shadow-blue-400/50">
-            <h3 className="text-2xl md:text-3xl font-semibold text-white">Backup & Replacement</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-white">Backup & Replacement</h3>
             <ul className="text-gray-400 mt-4 max-w-md space-y-2 list-disc list-inside">
               <li>Quick Replacements: Fast options to minimize disruption if a hire doesn&apos;t work out.</li>
               <li>Backup Support: Ensuring critical roles are covered with backup staff.</li>
@@ -236,7 +236,7 @@ export default function HRServices() {
         </div>
 
         <div className="container mx-auto text-center relative">
-          <h2 className="text-5xl md:text-5xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-blue-100 to-blue-500 animate-pulse">
+          <h2 className="text-4xl md:text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-blue-100 to-blue-500 animate-pulse">
             Our Vision
           </h2>
         
@@ -255,16 +255,16 @@ export default function HRServices() {
       </section>
       <section className="relative bg-black text-white py-24 px-8 md:px-16 overflow-hidden">
         <div className="container mx-auto text-center relative z-0">
-          <h2 className="text-5xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
+          <h2 className="text-4xl md:text-4xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-[#00aaff]">
             Why Choose Us?
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12">
+          <p className="text-md text-gray-300 max-w-3xl mx-auto mb-12">
             We bring unparalleled expertise, tailored solutions, and a commitment to ongoing support, ensuring your team&apos;s success.
           </p>
 
           <div className="relative flex flex-wrap justify-center gap-12">
             <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-2">
-              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
+              <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-yellow-500 transition-colors duration-300 ease-in-out">
                 Industry Expertise
               </h3>
               <p className="text-gray-400 mb-6 group-hover:text-gray-200">
@@ -272,7 +272,7 @@ export default function HRServices() {
               </p>
             </div>
             <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-2">
-              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300 ease-in-out">
+              <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-pink-500 transition-colors duration-300 ease-in-out">
                 Tailored Solutions
               </h3>
               <p className="text-gray-400 mb-6 group-hover:text-gray-200">
@@ -280,7 +280,7 @@ export default function HRServices() {
               </p>
             </div>
             <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-3">
-              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-purple-500 transition-colors duration-300 ease-in-out">
+              <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-purple-500 transition-colors duration-300 ease-in-out">
                 Efficient Process
               </h3>
               <p className="text-gray-400 mb-6 group-hover:text-gray-200">
@@ -288,7 +288,7 @@ export default function HRServices() {
               </p>
             </div>
             <div className="group relative p-10 bg-gradient-to-tr from-gray-900 to-black rounded-xl shadow-lg hover:shadow-2xl transition-all duration-700 ease-out hover:-translate-y-4 transform hover:rotate-3">
-              <h3 className="text-3xl font-semibold text-white mb-4 group-hover:text-blue-500 transition-colors duration-300 ease-in-out">
+              <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-blue-500 transition-colors duration-300 ease-in-out">
                 Ongoing Support
               </h3>
               <p className="text-gray-400 mb-6 group-hover:text-gray-200">

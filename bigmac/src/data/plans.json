@@ -2,7 +2,7 @@
   {
     "name": "Standard Plan",
     "price": {
-      "monthly": 7999,
+      "monthly": 15000,
       "yearly": 7999
     },
     "icon": "/images/icons/icon-arcade.svg",
@@ -32,7 +32,7 @@
   {
     "name": "Premium Plan",
     "price": {
-      "monthly": 13999,
+      "monthly": 25000,
       "yearly": 13999
     },
     "icon": "/images/icons/icon-advanced.svg",
@@ -64,7 +64,7 @@
   {
     "name": "Custom Plan",
     "price": {
-      "monthly": "???",
+      "monthly": "?",
       "yearly": "???"
     },
     "icon": "/images/icons/icon-pro.svg",

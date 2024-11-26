@@ -105,7 +105,7 @@ const Services = () => {
       className="relative py-12 px-6 sm:px-8 lg:px-24 text-white bg-black"
       style={{ marginTop: "-80px" }}
     >
-      <h1 className="text-4xl sm:text-6xl lg:text-5xl mt-20 font-bold tracking-wider text-center mb-16">
+      <h1 className="text-4xl sm:text-4xl lg:text-4xl mt-20 font-bold tracking-wider text-center mb-16">
         <span className="text-white">Our</span>{" "}
         <span className="text-[#00aaff]">Services</span>
       </h1>

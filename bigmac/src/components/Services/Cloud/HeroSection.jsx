@@ -4,10 +4,10 @@ export default function ServerCloudManagement() {
     <section className="py-20 bg-black mt-10">
       <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center gap-12">
         <div className="lg:w-1/2 text-center lg:text-left lg:pl-14">
-          <h2 className="text-5xl font-extrabold text-white leading-tight mb-6">
+          <h2 className="text-4xl font-bold text-white leading-tight mb-6">
             Advanced Server Cloud Management
           </h2>
-          <p className="text-lg text-gray-300 mb-6">
+          <p className="text-md text-gray-300 mb-6">
             Experience cutting-edge cloud solutions tailored to your business needs.
             Our platform ensures secure, scalable, and efficient server management
             with real-time monitoring and robust security features.

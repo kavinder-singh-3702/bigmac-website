@@ -66,8 +66,8 @@ const PortfolioSlider = () => {
   };
 
   return (
-    <div className="w-[90%] mx-auto h-auto py-8 px-4 sm:py-10 sm:px-20">
-      <h2 className="text-2xl sm:text-4xl font-bold text-center text-white mb-4 sm:mb-8">
+    <div id="portfolio" className="w-[90%] mx-auto h-auto py-8 px-4 sm:py-10 sm:px-20">
+      <h2 className="text-4xl sm:text-4xl font-bold text-center text-white mb-4 sm:mb-8">
         Portfolio
       </h2>
       <Slider {...settings}>

@@ -27,7 +27,7 @@ export const Timeline = ({ data }) => {
       className="w-full bg-black font-sans md:px-10"
       ref={containerRef}
     >
-     <h1 className="text-4xl sm:text-6xl lg:text-5xl font-bold tracking-wider text-center mb-14">
+     <h1 className="text-4xl sm:text-4xl lg:text-4xl font-bold tracking-wider text-center mb-14">
         <span className="text-white">Our Work</span>{" "}
         <span className="text-[#00aaff]">Process</span>
       </h1>

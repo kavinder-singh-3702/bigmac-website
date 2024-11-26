@@ -35,28 +35,6 @@ const servicesContent = {
         
       </>
     ),
-    "App Development": (
-      <>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
-          App Development
-        </h2>
-        <p className="text-gray-300 leading-relaxed mb-6">
-          In today&apos;s mobile-first world, having a functional and engaging app is
-          crucial for any business. Our app development team is skilled in
-          creating apps that are not only visually appealing but also fast,
-          secure, and scalable. We use the latest technologies to build apps for
-          both iOS and Android, providing a seamless experience for your customers
-          on any device.
-        </p>
-        <h3 className="text-2xl font-semibold text-white mb-4">Key Web Services We Offer</h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Static Websites: Simple, professional sites to get your business online quickly.</li>
-              <li>Dynamic Websites: Interactive sites with custom features and content management.</li>
-              <li>Custom Web Applications: Tailored solutions for e-commerce, booking systems, portals, and more.</li>
-              <li>E-Commerce Websites: Secure, conversion-optimized online stores.</li>
-            </ul>
-      </>
-    ),
     "UX/UI Design": (
       <>
         <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
@@ -111,137 +89,6 @@ const servicesContent = {
             </ul>
       </>
     ),
-    "HR Services": (
-      <>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
-          HR Services
-        </h2>
-        <h2 className="text-xl md:text-xl mb-6 bg-clip-text text-transparent bg-white">
-          Specialized HR Services for Technical Industries
-        </h2>
-        <p className="text-gray-300 leading-relaxed mb-6">
-          At BIGMAC, we provide expert recruitment services for industries like Satellite Communication, Broadcasting, Telecom Networking, IT Software, and Aviation. 
-          As a founder with hands-on experience transitioning from engineer to manager, I understand the technical needs and challenges of these industries, ensuring we find the right talent for your business.
-        </p>
-        <h3 className="text-2xl font-semibold text-white mb-4">Our HR Services</h3>
-        <ul className="list-decimal list-inside text-gray-300 space-y-4">
-          <li>
-            <strong>Talent Sourcing</strong>
-            <ul className="list-disc ml-6 space-y-2">
-              <li>
-                <strong>Industry Expertise:</strong> We specialize in recruiting professionals for Satellite Communication, Broadcasting, Telecom Networking, IT Software, and more, using both traditional and modern sourcing methods.
-              </li>
-              <li>
-                <strong>Targeted Approach:</strong> Leverage our deep industry knowledge to find candidates with the exact skills needed for your roles.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Screening & Shortlisting</strong>
-            <ul className="list-disc ml-6 space-y-2">
-              <li>
-                <strong>Technical Screening:</strong> With my technical background, we ensure candidates meet your specific skill requirements.
-              </li>
-              <li>
-                <strong>Cultural Fit:</strong> We assess not only technical skills but also cultural alignment to help integrate new hires seamlessly into your team.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Recruitment & Selection</strong>
-            <ul className="list-disc ml-6 space-y-2">
-              <li>
-                <strong>Full-Cycle Recruitment:</strong> From job posting to interviews and negotiations, we handle the entire process for you.
-              </li>
-              <li>
-                <strong>Custom Solutions:</strong> Whether you need permanent or temporary staff, we tailor our recruitment strategy to your unique needs.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Onboarding & Support</strong>
-            <ul className="list-disc ml-6 space-y-2">
-              <li>
-                <strong>Smooth Onboarding:</strong> We provide support to ensure new hires are quickly integrated and productive.
-              </li>
-              <li>
-                <strong>Retention Strategies:</strong> We assist in employee retention, helping you keep top talent for the long term.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Backup & Replacement</strong>
-            <ul className="list-disc ml-6 space-y-2">
-              <li>
-                <strong>Quick Replacements:</strong> If a hire doesn&apos;t work out, we offer fast replacement options to minimize disruption.
-              </li>
-              <li>
-                <strong>Backup Support:</strong> For critical roles, we ensure you have backup staff ready to maintain operations.
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <h3 className="text-2xl font-semibold text-white mt-6 mb-4">Why Choose Us?</h3>
-        <ul className="list-disc list-inside text-gray-300 space-y-2">
-          <li className="pl-4 text-indent">
-            <strong>Customer-Centric Approach:</strong> As a technical founder, I bring hands-on experience in the industries we serve, ensuring we find the right talent.
-          </li>
-          <li className="pl-4 text-indent">
-            <strong>Tailored Solutions:</strong> We understand your unique needs and provide candidates with the skills and experience required for success.
-          </li>
-          <li className="pl-4 text-indent">
-            <strong>Efficient Process:</strong> Our streamlined approach saves you time and resources while ensuring top-quality hires.
-          </li>
-          <li className="pl-4 text-indent">
-            <strong>Ongoing Support:</strong> From recruitment to retention, we offer continuous support to ensure your team’s success.
-          </li>
-        </ul>
-
-        <style jsx>
-        {`
-          .text-indent {
-            text-indent: -1.25em;
-            padding-left: 1.25em;
-          }
-        `}
-        </style>
-
-      </>
-    ),
-    "IT Consulting and Strategy": (
-      <>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
-        IT Consulting and Strategy
-        </h2>
-        <p className="text-gray-300 leading-relaxed mb-6">
-        Our team of IT consultants helps businesses align their technology strategies with their overall goals. We analyze your current systems, recommend best practices, and help you implement solutions that drive business growth. Whether you need cloud solutions, digital transformation, or strategic IT planning, we are here to guide you every step of the way.
-        </p>
-        <h3 className="text-2xl font-semibold text-white mt-6 mb-4">Why Choose Us?</h3>
-        <ul className="list-disc list-inside text-gray-300 space-y-2">
-          <li className="pl-4 text-indent">
-            <strong>Customer-Centric Approach:</strong> As a technical founder, I bring hands-on experience in the industries we serve, ensuring we find the right talent.
-          </li>
-          <li className="pl-4 text-indent">
-            <strong>Tailored Solutions:</strong> We understand your unique needs and provide candidates with the skills and experience required for success.
-          </li>
-          <li className="pl-4 text-indent">
-            <strong>Efficient Process:</strong> Our streamlined approach saves you time and resources while ensuring top-quality hires.
-          </li>
-          <li className="pl-4 text-indent">
-            <strong>Ongoing Support:</strong> From recruitment to retention, we offer continuous support to ensure your team’s success.
-          </li>
-        </ul>
-
-        <style jsx>
-        {`
-          .text-indent {
-            text-indent: -1.25em;
-            padding-left: 1.25em;
-          }
-        `}
-        </style>
-      </>
-    ),
     "IT Support and Maintenance": (
       <>
         <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
@@ -286,7 +133,7 @@ export default function WebsiteDevelopment() {
       <section className="relative bg-black text-white py-16 md:py-24 px-8 md:px-16 overflow-hidden">
   <div className="absolute inset-0 bg-black opacity-95"></div>
   <div className="container mx-auto relative z-10 max-w-7xl">
-    <h2 className="text-4xl md:text-5xl font-extrabold bg-black bg-clip-text text-white text-center mb-10">
+    <h2 className="text-4xl md:text-4xl font-bold bg-black bg-clip-text text-white text-center mb-10">
       Web Development & Design
     </h2>
     <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto text-center mb-16 leading-relaxed">
@@ -315,7 +162,7 @@ export default function WebsiteDevelopment() {
         </svg>
       </div>
       <div className="text-center md:text-left max-w-xl">
-      <h3 className="text-2xl font-semibold mb-4">High-Performance Websites</h3>
+      <h3 className="text-2xl font-bold mb-4">High-Performance Websites</h3>
         <p className="text-lg text-gray-300 leading-loose">
           Crafting high-performance, visually stunning, and functional websites that drive growth. From minimalistic designs to dynamic, interactive interfaces, we cater to your unique vision.
         </p>
@@ -378,12 +225,9 @@ export default function WebsiteDevelopment() {
             <ul className="space-y-4">
               {[
                 "Web Development",
-                "App Development",
-                "Server & Cloud Management",
-                "HR Services",
-                "IT Support and Maintenance",
-                "IT Consulting and Strategy",
                 "UX/UI Design",
+                "Server & Cloud Management",
+                "IT Support and Maintenance",
               ].map((service) => (
                 <li
                   key={service}
@@ -406,64 +250,10 @@ export default function WebsiteDevelopment() {
           </div>
         </div>
       </section>
-
-    {/* <section className="bg-gradient-to-b from-black via-gray-900 to-black text-white py-16 px-8 md:py-24 md:px-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-start gap-12">
-        <aside className="bg-black p-6 w-full md:w-1/3 lg:w-1/4 border border-gray-700 rounded-lg shadow-lg transition-colors duration-300">
-          <h2 className="text-lg font-bold mb-4 text-white hover:text-blue-400">
-            Additional Services We Provide
-          </h2>
-          <ul className="space-y-4">
-            {[
-              { name: "Web Development", path: "/services/website-development" },
-              { name: "App Development", path: "/services/website-development" },
-              { name: "Server & Cloud Management", path: "/services/server-cloud-management" },
-              { name: "HR Services", path: "/services/hr-services" },
-              { name: "Quality Assurance and Testing", path: "/services/server-cloud-management" },
-              { name: "IT Support and Maintenance", path: "/services/it-support-maintenancet" },
-              { name: "IT Consulting and Strategy", path: "/services/it-support-maintenance" },
-              { name: "UX/UI Design", path: "/services/website-development" },
-            ].map((service, index) => (
-              <li
-                key={index}
-                className="text-gray-400 hover:text-blue-400 hover:bg-gray-800 rounded-lg p-2 transition duration-300"
-              >
-                <a href={service.path}>{service.name}</a>
-              </li>
-            ))}
-          </ul>
-        </aside>
-        <div className="flex-1">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-white">
-            Web Design & Development
-          </h2>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            We build custom websites and web applications that not only look
-            stunning but also perform seamlessly. Whether you need a static
-            website to showcase your brand, a dynamic website with advanced
-            functionality, or a custom web application, we&apos;ve got you covered.
-            Our websites are designed to be:
-          </p>
-          <ul className="list-disc list-inside text-gray-300 space-y-2 mb-6">
-            <li>Responsive: Ensuring a great experience on desktops, tablets, and mobiles.</li>
-            <li>SEO Optimized: Helping you rank higher and attract more visitors.</li>
-            <li>User-Friendly: Focused on providing easy navigation and engagement.</li>
-            <li>Scalable & Secure: Built to grow with your business while keeping user data safe.</li>
-          </ul>
-          <h3 className="text-2xl font-semibold text-white mb-4">Key Web Services We Offer</h3>
-          <ul className="list-disc list-inside text-gray-300 space-y-2">
-            <li>Static Websites: Simple, professional sites to get your business online quickly.</li>
-            <li>Dynamic Websites: Interactive sites with custom features and content management.</li>
-            <li>Custom Web Applications: Tailored solutions for e-commerce, booking systems, portals, and more.</li>
-            <li>E-Commerce Websites: Secure, conversion-optimized online stores.</li>
-          </ul>
-        </div>
-      </div>
-    </section> */}
-
-        <section className="bg-black text-white py-20 px-8 relative overflow-hidden">
+      <WebDevelopmentExpertise />
+        <section id="whychooseus" className="bg-black text-white py-20 px-8 relative overflow-hidden">
         <div className="container mx-auto text-center z-10 relative">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-10 bg-clip-text text-transparent bg-white leading-snug">
+          <h2 className="text-4xl md:text-4xl font-bold mb-8 md:mb-10 bg-clip-text text-transparent bg-white leading-snug">
             Why Choose Us?
           </h2>
           <ul className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6 md:mb-8 space-y-6 list-none">
@@ -501,7 +291,7 @@ export default function WebsiteDevelopment() {
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-50 z-0"></div>
       </section>
-      <WebDevelopmentExpertise />
+   
       <PricingPlans />
       <WebsiteContactUs />
      <Footer />

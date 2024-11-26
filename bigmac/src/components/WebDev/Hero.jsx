@@ -72,16 +72,13 @@ const WebHero = () => {
     <section className="bg-black">
       <div className=" mt-20 max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-300 overflow-hidden md:px-8 md:flex">
         <div className="flex-none space-y-5 max-w-xl items-center justify-center">
-          <h1 className="text-7xl text-white font-extrabold sm:text-5xl">
+          {/* <h1 className="text-7xl text-white font-extrabold sm:text-3xl"> */}
+          <h1 className="text-5xl font-bold text-white sm:text-xl md:text-2xl lg:text-4xl xl:text-4xl">
             Build your Webiste exactly how you want
           </h1>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          </p>
           <div className="flex items-center gap-x-3 sm:text-sm">
             <a
-              href="javascript:void(0)"
+              href="#plans"
               className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex"
             >
               Get started
@@ -99,7 +96,7 @@ const WebHero = () => {
               </svg>
             </a>
             <a
-              href="javascript:void(0)"
+              href="#plans"
               className="flex items-center bg-red-400 justify-center gap-x-1 py-2 px-4 text-white hover:text-gray-900 font-medium duration-150 md:inline-flex"
             >
               Contact sales
@@ -119,7 +116,6 @@ const WebHero = () => {
           </div>
         </div>
         <div className="flex-1 hidden md:block">
-          {/* Replace with your image */}
           <img
             src="https://raw.githubusercontent.com/sidiDev/remote-assets/c86a7ae02ac188442548f510b5393c04140515d7/undraw_progressive_app_m-9-ms_oftfv5.svg"
             className="max-w-xl"

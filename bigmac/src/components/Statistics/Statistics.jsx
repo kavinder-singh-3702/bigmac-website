@@ -11,7 +11,7 @@ const Statistics = () => {
 
   return (
      <section ref={ref} className="bg-black text-white py-12 px-5 text-center">
-      <h2 className=" text-5xl font-bold text-center my-10 mb-20">
+      <h2 className=" text-4xl font-bold text-center my-10 mb-20">
         Best Solutions for your <span className="text-[#65b8de]">Website</span>
       </h2>
       <p className="text-lg text-white font-semibold mb-10">
